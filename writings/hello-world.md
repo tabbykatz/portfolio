@@ -48,4 +48,4 @@ life, parenting, and homeschooling (when my kids were young).Today I write
 technical blogs for school and pleasure, extoll the virtues of good books or websites, and share the joys & trials of my life as a single mother of 5, fulltime student, and tech newb. </p>
 
 <p>I hope you'll enjoy reading here, and if you'd like to respond or discuss you
-can find me on [Twitter](https://twitter.com/tabby__katz)</p>
+can find me on <a href ="https://twitter.com/tabby__katz">Twitter</a>.</p>

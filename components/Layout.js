@@ -24,6 +24,10 @@ const menu = [
   {
 	  path: '/portfolio',
 	  name: '3: portfolio',
+  },
+  {
+	  path: '/setup',
+	  name: '4: setup',
   }
 ]
 const SHORTCUTS = ['Digit0', 'Digit1', 'Digit2', 'Digit3']
@@ -43,14 +47,22 @@ const QUOTES = [
 	`Computers can control you or they can lighten your work—if you want to be in charge of your machines, you have to learn to write code. -Cory Doctorow`,
 	`Programs must be written for people to read, and only incidentally for machines to execute. -Abelson and Sussman`,
 ]
-
-function Layout({ children, isHomepage, secondaryPage }) {
+const PROJECTS = [
+	`Have a look at some of my projects!`,
+	`My Portfolio.`,
+	`I've come a long way, baby! Check out some of my projects since I learned to code.`, 
+	`Make things.`,
+	`When I make new things, I add them here. Have a look!`,
+	]
+function Layout({ children, isHomepage, secondaryPage, portfolio}) {
   const router = useRouter()
   const onLoadTheme = typeof localStorage !== 'undefined' && localStorage.getItem('BLOG_THEME')
   const [theme, setTheme] = useState(onLoadTheme)
   const [mounted, setMounted] = useState(false)
 	// randomized quotes on load
   const [quote] = useState(QUOTES[Math.floor(Math.random() * QUOTES.length)])
+	// random intro to projects
+  const [projectIntro] = useState(PROJECTS[Math.floor(Math.random() * PROJECTS.length)])
   const switchTheme = () => {
     const setTo = theme === 'dark' ? 'light' : 'dark'
 
@@ -88,7 +100,7 @@ function Layout({ children, isHomepage, secondaryPage }) {
   }, [theme])
 
   const containerProps = {
-    ...isHomepage && { md: 12 },
+    ...isHomepage || portfolio && { md: 12 },
     ...!isHomepage && { md: 8, mdOffset: 2 },
   }
 
@@ -133,7 +145,7 @@ function Layout({ children, isHomepage, secondaryPage }) {
             {!secondaryPage && (
               <div style={{ textAlign: 'center' }}>
                 <h1 className="blog-title">
-                  {quote}
+				{!secondaryPage && !portfolio ? quote : projectIntro}
                 </h1>
 
                 <p className="entry-description">

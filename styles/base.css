@@ -399,6 +399,8 @@ footer {
 }
 
 .uses-list li.head {
+  font-family: 'Space Mono', ibm-plex-mono, Monaco, 'Lucida Console';
+  font-style: italic;
   font-weight: 600;
   font-size: 32px;
   margin-bottom: 20px;
@@ -412,13 +414,13 @@ footer {
 }
 
 .uses-list li:not(.head):before {
-  content: "//";
+  content: "->";
   color: var(--uses-secondary-color);
   padding-right: 10px;
 }
 
 .uses-list li:not(.head) {
-  color: var(--uses-secondary-color);
+  color: #444;
 }
 
 .uses-list li:not(.head) a {

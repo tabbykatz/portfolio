@@ -2,7 +2,7 @@ export const USES = [
   {
     title: 'Software',
     stack: [
-      { name: 'Vim', description: 'Yeah, I'm one of those. You should be, too. :wink: , link: 'https://www.vim.org/' },
+      { name: 'Vim', description: `Yeah, I'm one of those. You should be, too. :wink:` , link: 'https://www.vim.org/' },
       { name: 'VimAwesome', description: 'Do cool things with Vim!', link: 'https://vimawesome.com/' },
       { name: 'Firefox', description: 'Never bothers me.', link: 'https://www.mozilla.org/en-US/firefox/new/' },
     ]
