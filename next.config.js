@@ -1,6 +1,6 @@
-const withSass = require('@zeit/next-sass');
-const withCSS = require('@zeit/next-css');
 const withTM = require('next-transpile-modules');
+const withCSS = require('@zeit/next-css');
+const withSass = require('@zeit/next-sass');
 
 module.exports = withCSS(
 	withSass(
