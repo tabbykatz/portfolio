@@ -282,6 +282,7 @@ hr:before {
 }
 
 .writing-container a {
+  font-family: Montserrat;
   color: var(--text-color);
   text-decoration: underline;
   text-decoration-color: var(--primary-color);

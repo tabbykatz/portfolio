@@ -57,7 +57,7 @@ function Writing({ content, data }) {
 
 Writing.getInitialProps = async (context) => {
   const { slug } = context.query
-  const content = await import(`../../writings/${slug}.md`)
+  const content = await import(`../../portfolio/${slug}.md`)
   const data = matter(content.default)
 
   return { ...data }
