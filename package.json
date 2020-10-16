@@ -1,0 +1,33 @@
+{
+  "name": "tabbykatz",
+  "version": "1.0.0",
+  "description": "curious enthusiasm",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start",
+    "build:static": "next build && next export"
+  },
+  "author": "Tabitha O'Melay <@tabby__katz>",
+  "license": "ISC",
+  "dependencies": {
+    "@zeit/next-css": "^1.0.1",
+    "@zeit/next-sass": "^1.0.1",
+    "gray-matter": "^4.0.2",
+    "next": "^9.5.5",
+    "next-transpile-modules": "^2.3.1",
+    "raw-loader": "^4.0.1",
+    "react": "^16.14.0",
+    "react-copy-to-clipboard": "^5.0.2",
+    "react-dom": "^16.14.0",
+    "react-feather": "^2.0.4",
+    "react-flexbox-grid": "^2.1.2",
+    "react-markdown": "^4.3.1",
+    "react-scroll-progress-bar": "^1.1.12",
+    "react-syntax-highlighter": "^12.2.1",
+    "react-text-transition": "^1.0.2",
+    "reading-time": "^1.2.0",
+    "simple-icons": "^2.9.0"
+  }
+}

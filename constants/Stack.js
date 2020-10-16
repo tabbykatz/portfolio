@@ -1,0 +1,16 @@
+export const PRESENT = [
+  'vim',
+  'C',
+  'python',
+  'gnubash',
+  'Flask',
+  'HTML5',
+  'CSS3',
+  'JavaScript',
+  'MySQL',
+  'jQuery',
+  'Sass',
+  'React',
+  'Next.js',
+  'Node.js',
+]
