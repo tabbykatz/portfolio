@@ -7,6 +7,7 @@ export const PRESENT = [
   'GitHub',
   'C',
   'Python',
+  'Flask',
   'Java',
   'Docker',
   'gnubash',

@@ -1,9 +1,9 @@
 import React from 'react'
 
 import Layout from '../components/Layout'
-import { USES } from '../constants/Uses'
+import { SETUP } from '../constants/Setup'
 
-function Uses({ og }) {
+function Setup({ og }) {
   return (
     <>
       <Layout secondaryPage>
@@ -13,7 +13,7 @@ function Uses({ og }) {
           I have been lucky to receive a lot of support as I transition from housewife to software engineer, and some of that has been in the form of material additions to my setup, but much has been valuable advice & recommendations. Thought I'd share what I use here.
         </div>
 
-        {USES.map(({ title, stack }) => (
+        {SETUP.map(({ title, stack }) => (
           <ul className="uses-list" key={title}>
             <li className="head">{title}</li>
 
@@ -30,7 +30,7 @@ function Uses({ og }) {
   )
 }
 
-Uses.getInitialProps = () => {
+Setup.getInitialProps = () => {
   return {
     data: {
       og: {
@@ -41,4 +41,4 @@ Uses.getInitialProps = () => {
   }
 }
 
-export default Uses
+export default Setup

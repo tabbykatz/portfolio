@@ -30,7 +30,7 @@ const menu = [
 	  name: '4: setup',
   }
 ]
-const SHORTCUTS = ['Digit0', 'Digit1', 'Digit2', 'Digit3']
+const SHORTCUTS = ['Digit0', 'Digit1', 'Digit2', 'Digit3', 'Digit4']
 const avatar = `https://images.weserv.nl/?url=https://unavatar.now.sh/twitter/tabby__katz&w=150`
 const QUOTES = [
   `There are 10 types of people in this world, those who understand binary and those who don't.`,
@@ -52,8 +52,8 @@ const QUOTES = [
 ]
 const PROJECTS = [
 	`Have a look at some of my projects!`,
-	`My Portfolio.`,
-	`I've come a long way, baby! Check out some of my projects since I learned to code.`, 
+	`Portfolio:`,
+	`I've come a long way, baby! Check out some of my projects.`, 
 	`Make things.`,
 	`When I make new things, I add them here. Have a look!`,
 	]
@@ -74,10 +74,10 @@ function Layout({ children, isHomepage, secondaryPage, portfolio}) {
 
   function triggerShortcut(e) {
     if (SHORTCUTS.includes(e.code)) {
-      // Split code to get only the number
+      // getting the digit
       const code = e.code.split('t')[1]
 
-      // Get route from menu
+      // route from menu
       const { path } = menu[code]
 
       router.push(path)
@@ -88,7 +88,7 @@ function Layout({ children, isHomepage, secondaryPage, portfolio}) {
     document.addEventListener('keypress', triggerShortcut)
 
     if (onLoadTheme) return
-
+// if they already prefer a theme start with it
     if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
       setTheme('dark')
     }
