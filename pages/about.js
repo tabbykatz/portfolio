@@ -29,7 +29,7 @@ As I complete my specialization as a full stack engineer, I hope to solidify my 
 
             <h3>What I've worked with so far:</h3>
 
-            <Row style={{ marginTop: 30 }}>
+            <Row style={{ marginTop: 30 }} className="data-icon">
               {PRESENT.map(s => (
                 <Col md={2} xs={4} key={s} style={{ textAlign: 'center', marginBottom: 40 }}>
                   <Icon type={s} />

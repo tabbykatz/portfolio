@@ -1,14 +1,15 @@
 import React from 'react'
 import simpleIcons from 'simple-icons'
+import Layout from '../components/Layout'
 
 const Icon = ({ type, style }) => {
   const icon = simpleIcons.get(type)
+const theme = Layout.theme;
 
   return (
-    <div
+    <div class="data-icon"
       data-icon={type}
       style={{
-        fill: `#${icon.hex}`,
         display: 'inline-block',
         width: '50px',
         margin: '0 auto',

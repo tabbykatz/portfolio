@@ -33,7 +33,6 @@ const menu = [
 const SHORTCUTS = ['Digit0', 'Digit1', 'Digit2', 'Digit3']
 const avatar = `https://images.weserv.nl/?url=https://unavatar.now.sh/twitter/tabby__katz&w=150`
 const QUOTES = [
-  `Hello babies. Welcome to Earth. It's hot in the summer and cold in the winter. It's round and wet and crowded. On the outside, babies, you've got a hundred years here. There's only one rule that I know of, babies-"God damn it, you've got to be kind". -Kurt Vonnegut`,
   `There are 10 types of people in this world, those who understand binary and those who don't.`,
   'First, solve the problem. Then, write the code. - John Johnson',
   'Programming is the art of telling another human being what one wants the computer to do. -Donald Knuth',
@@ -43,9 +42,13 @@ const QUOTES = [
 	`['hip', 'hip']`,
 	`Perfection is achieved, not when there is nothing more to add, but when there is nothing left to take away. -Antoine de Saint-Exupéry`,
 	`I hate code, and I want as little of it as possible in our product. - Jack Diederich`, 
-	`If you've never programmed a computer, you should. There's nothing like it in the whole world. When you program a computer, it does exactly what you tell it to do. It's like designing a machine — any machine, like a car, like a faucet, like a gas-hinge for a door — using math and instructions. It's awesome in the truest sense: it can fill you with awe. -Cory Doctorow`,
 	`Computers can control you or they can lighten your work—if you want to be in charge of your machines, you have to learn to write code. -Cory Doctorow`,
 	`Programs must be written for people to read, and only incidentally for machines to execute. -Abelson and Sussman`,
+	`Some people, when confronted with a problem, think "I know, I'll use regular expressions." Now they have two problems. -Jamie Zawinski`,
+	`Peers can be the best teachers, because they're the ones that remember what it's like to not understand. -Peter Norvig`,
+	`Computer language design is just like a stroll in the park. Jurassic Park, that is. -Larry Wall`,
+	`Computers are useless. They can only give you answers. -Pablo Picasso`,
+
 ]
 const PROJECTS = [
 	`Have a look at some of my projects!`,

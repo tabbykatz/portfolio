@@ -2,6 +2,7 @@ export const PRESENT = [
   'Linux',
   'Apache',
   'vim',
+  'Markdown',
   'git',
   'GitHub',
   'C',

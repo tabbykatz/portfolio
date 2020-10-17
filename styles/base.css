@@ -435,10 +435,14 @@ footer {
   border-bottom: 1px var(--text-color) dashed;
 }
 
-[data-icon="Next.js"] svg,
+/*[data-icon="Next.js"] svg,
 [data-icon="Zeit"] svg,
 [data-icon="CoffeeScript"] svg {
   fill: var(--text-color);
+}*/
+
+.data-icon {
+	fill: var(--text-color) !important;
 }
 
 .stack-name {
