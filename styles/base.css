@@ -284,9 +284,8 @@ hr:before {
 .writing-container a {
   font-family: Montserrat;
   color: var(--text-color);
-  text-decoration: underline;
-  text-decoration-color: var(--primary-color);
-  text-decoration-thickness: 4px;
+  text-decoration: none;
+  border-bottom: 1px var(--text-color) dashed;
 }
 
 .back-button {
@@ -377,7 +376,7 @@ footer {
   font-family: Montserrat;
   font-size: 20px;
   line-height: 1.8em;
-  color: var(--dark-grey);
+  color: var(--text-color);
 }
 
 .uses-intro a, .about-intro a {
@@ -421,7 +420,7 @@ footer {
 }
 
 .uses-list li:not(.head) {
-  color: #444;
+  color: var(--text-color);
 }
 
 .uses-list li:not(.head) a {
