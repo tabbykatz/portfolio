@@ -3,7 +3,7 @@ import simpleIcons from 'simple-icons'
 import Layout from '../components/Layout'
 
 const Icon = ({ type, style }) => {
-  const icon = simpleIcons.get(type)
+const icon = simpleIcons.get(type)
 const theme = Layout.theme;
 
   return (

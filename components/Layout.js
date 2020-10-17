@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { Grid, Row, Col } from 'react-flexbox-grid'
-import { Sun, Moon } from 'react-feather'
+import { Zap } from 'react-feather';
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 
@@ -136,7 +136,7 @@ function Layout({ children, isHomepage, secondaryPage, portfolio}) {
 
           <Col xs={2} style={{ textAlign: 'right' }}>
             <button className="theme-switch-button" onClick={() => switchTheme()}>
-              {theme === 'dark' ? <Sun /> : <Moon />}
+              {theme === 'dark' ? <Zap /> : <Zap />}
             </button>
           </Col>
         </Row>
@@ -168,11 +168,11 @@ function Layout({ children, isHomepage, secondaryPage, portfolio}) {
                     <button className="theme-switch-button-mobile" onClick={() => switchTheme()}>
                       {theme === 'dark' ? (
                         <>
-                          <Sun /> Light
+                          <Zap /> Light
                         </>
                       ) : (
                         <>
-                          <Moon /> Dark
+                          <Zap /> Dark
                         </>
                       )}
                     </button>
