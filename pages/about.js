@@ -27,7 +27,7 @@ As I complete my specialization as a full stack engineer, I hope to solidify my 
 
             <hr />
 
-            <h3>What I've worked with so far</h3>
+            <h3>What I've worked with so far:</h3>
 
             <Row style={{ marginTop: 30 }}>
               {PRESENT.map(s => (
