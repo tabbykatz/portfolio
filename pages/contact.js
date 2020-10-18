@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { Row, Col } from 'react-flexbox-grid'
 import dynamic from 'next/dynamic'
-
 import Layout from '../components/Layout'
 
 function Contact() {
@@ -16,28 +15,16 @@ function Contact() {
           <div className="about-intro">
             <Row>
               <Col md={12}>
-	  write things
+	  Isolation is real for all of us right now, so please reach out. I'd love to hear what you think of my projects.
               </Col>
             </Row>
 
             <hr />
-
-            <h3>You can find me here:</h3>
-
-            <Row style={{ marginTop: 30 }} className="data-icon">
-                <Col md={12}>
-	  			<div className="stack-name">
-                  <img className="data-icon" height="50" width="50" src="../public/github.svg"/>
-   				  <img className="data-icon" height="50" width="50" src="../public/linkedin.svg"/>
-	  			  <img className="data-icon" height="50" width="50" src="../[ublic/]twitter.svg"/>
+	  </div>
+	  </div>
+	  			<div className="contact" width="100%" text-align="center">
+				<a href="https://github.com/tabbykatz" target="_blank">Github</a> - <a href="https://twitter.com/tabby__katz" target="_blank">Twitter</a> - <a href="https://www.linkedin.com/in/tabbykatz/" target="_blank">LinkedIn</a> - <a href="mailto:tomelay@gmail.com">Email</a>
 	  			</div>
-                </Col>
-            </Row>
-
-            <hr />
-
-          </div>
-        </div>
       </Layout>
     </>
   )

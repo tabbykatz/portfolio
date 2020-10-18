@@ -18,10 +18,11 @@ function About() {
           <div className="about-intro">
             <Row>
               <Col md={12}>
+	  <div className="about-intro">
 	  I'm a full stack engineer starting my Specializations year at Holberton School, where I've built a strong foundation in C and Python, developed projects ranging from a simple shell to an AirBnb clone. I have an affinity for bitwise operators, SQL (even if it's intimidating at times), and 'useless' front-end technologies.
                 <br /><br />
 As I complete my specialization as a full stack engineer, I hope to solidify my foundation while also learning new skills and finding my place in the community.
-
+</div>
               </Col>
             </Row>
 
@@ -31,7 +32,7 @@ As I complete my specialization as a full stack engineer, I hope to solidify my 
 
             <Row style={{ marginTop: 30 }} className="data-icon">
               {PRESENT.map(s => (
-                <Col md={2} xs={4} key={s} style={{ textAlign: 'center', marginBottom: 40 }}>
+                <Col md={2} xs={4} key={s} style={{ className: "data-icon", textAlign: 'center', marginBottom: 40 }}>
                   <Icon type={s} />
                   <div className="stack-name">{s}</div>
                 </Col>

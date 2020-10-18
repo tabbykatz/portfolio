@@ -29,6 +29,10 @@
     "react-syntax-highlighter": "^12.2.1",
     "react-text-transition": "^1.0.2",
     "reading-time": "^1.2.0",
-    "simple-icons": "^2.19.0"
+    "simple-icons": "^2.19.0",
+    "svg-inline-loader": "^0.8.2"
+  },
+  "devDependencies": {
+    "file-loader": "^6.1.1"
   }
 }

@@ -5,9 +5,10 @@ import Link from 'next/link'
 import { useRouter } from 'next/router'
 
 import { currentDayName } from '../utils/dateUtils'
-
 import ElectronicFrontier from './ElectronicFrontier'
 
+const blackLogo = './blacklogo.jpg'
+const whiteLogo = './whitelogo.jpg'
 const menu = [
   {
     path: '/',
@@ -119,7 +120,7 @@ function Layout({ children, isHomepage, secondaryPage, portfolio}) {
               <li className="logo">
                 <Link href="/" as="/">
                   <a>
-                    <img src={avatar} />
+	  {theme === 'dark' ? <img src={whiteLogo} /> : <img src={blackLogo} />}
                   </a>
                 </Link>
               </li>
