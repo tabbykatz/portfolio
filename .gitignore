@@ -4,3 +4,9 @@ node_modules/
 # builds #
 
 out/
+
+.vercel
+
+# junk
+
+*.swp
