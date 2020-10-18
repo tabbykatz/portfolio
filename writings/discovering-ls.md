@@ -1,5 +1,5 @@
 ---
-title: "Dicovering ls *.c"
+title: "Discovering ls *.c"
 date: "2020-02-03"
 og:
   description: "A technical blog entry for Holberton."

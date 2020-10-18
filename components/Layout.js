@@ -32,7 +32,6 @@ const menu = [
   }
 ]
 const SHORTCUTS = ['Digit0', 'Digit1', 'Digit2', 'Digit3', 'Digit4']
-const avatar = `https://images.weserv.nl/?url=https://unavatar.now.sh/twitter/tabby__katz&w=150`
 const QUOTES = [
   `There are 10 types of people in this world, those who understand binary and those who don't.`,
   'First, solve the problem. Then, write the code. - John Johnson',

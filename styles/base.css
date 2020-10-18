@@ -131,7 +131,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: calc(3vw + 3vh);
   text-align: center;
   margin: 100px 0 0;
-  letter-spacing: -.05em;
+  letter-spacing: -.05rem;
   line-height: 1em;
   background: linear-gradient(45deg, var(--primary-color) 32.5%, var(--secondary-color) 50.5%);
   -webkit-background-clip: text;
@@ -185,7 +185,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'Space Mono', ibm-plex-mono, Monaco, 'Lucida Console';
   font-weight: 800;
   font-size: calc(3vw + 3vh);
-  letter-spacing: -.19rem;
+  letter-spacing: -.05rem;
   margin: 50px 0 30px;
   background: linear-gradient(45deg, var(--primary-color) 32.5%, var(--secondary-color) 50.5%);
   -webkit-background-clip: text;
@@ -360,8 +360,8 @@ footer {
   align-items: center;
 }
 
-.hope-liked {
-  font-family: 'Space Mono', ibm-plex-mono, Monaco, 'Lucida Console';
+.signature {
+  font-family: Montserrat !important;;
   font-size: 21px;
   line-height: 1.9em;
   margin-top: 80px;

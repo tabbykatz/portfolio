@@ -62,7 +62,7 @@ function Writing({ content, data }) {
 
             <div />
 
-            <div className="hope-liked">
+            <div className="signature">
               Thanks for reading, 
 
               <br />

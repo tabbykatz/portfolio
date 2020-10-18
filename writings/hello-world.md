@@ -19,7 +19,7 @@ _I have long wanted to publish my writing from the terminal, and now I can!_
 
 <p>If you, like me, are new to programming with an interest in front-end
 development, I cannot recommend the twitter dev community strongly enough. I
-started my first round of <a href ="https://www.100daysofcode.com">#100DaysOfCode</a> and found my people. It
+started my first round of <a href ="https://www.100daysofcode.com" target="_blank">#100DaysOfCode</a> and found my people. It
 is through this community that I fell in love with Javascript, for better or
 worse. It's rare to find a group online that lifts up more than it knocks down,
 	but this is one.
@@ -48,4 +48,4 @@ life, parenting, and homeschooling (when my kids were young).Today I write
 technical blogs for school and pleasure, extoll the virtues of good books or websites, and share the joys & trials of my life as a single mother of 5, fulltime student, and tech newb. </p>
 
 <p>I hope you'll enjoy reading here, and if you'd like to respond or discuss you
-can find me on <a href ="https://twitter.com/tabby__katz">Twitter</a>.</p>
+can find me on <a href ="https://twitter.com/tabby__katz" target="_blank">Twitter</a>.</p>
