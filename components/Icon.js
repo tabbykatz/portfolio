@@ -7,7 +7,7 @@ const icon = simpleIcons.get(type)
 const theme = Layout.theme;
 
   return (
-    <div class="data-icon"
+    <div className="data-icon"
       data-icon={type}
       style={{
         display: 'inline-block',

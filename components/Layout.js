@@ -18,8 +18,8 @@ const menu = [
     name: '1: about',
   },
   {
-    path: '/resume',
-    name: '2: resume',
+    path: '/contact',
+    name: '2: contact',
   },
   {
 	  path: '/portfolio',
