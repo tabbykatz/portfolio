@@ -28,7 +28,7 @@ As I complete my specialization as a full stack engineer, I hope to solidify my 
 
             <hr />
 
-            <h3>What I've worked with so far:</h3>
+            What I've worked with so far:
 
             <Row style={{ marginTop: 30 }} className="data-icon">
               {PRESENT.map(s => (
@@ -39,12 +39,6 @@ As I complete my specialization as a full stack engineer, I hope to solidify my 
               ))}
             </Row>
 
-            <hr />
-
-            Follow me on {' '}
-            <a href="https://twitter.com/tabby__katz" target="_blank" rel="noopener noreferrer nofollow">
-              Twitter
-            </a>.
           </div>
         </div>
       </Layout>

@@ -716,11 +716,13 @@ footer {
   font-size: 14px;
   margin: 20px 0 40px;
   color: var(--uses-secondary-color);
-}i
+}
 
 .reading-time svg {
-  vertical-align: middle;
-  margin: -2px 5px 0 0;
+  padding-right: 3px;
+  padding-bottom: 1px;
+  vertical-align: text-bottom;
+  *margin: -2px 5px 0 0;
 }
 
 .eff {
