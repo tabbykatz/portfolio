@@ -7,8 +7,8 @@ import { useRouter } from 'next/router'
 import { currentDayName } from '../utils/dateUtils'
 import ElectronicFrontier from './ElectronicFrontier'
 
-const blackLogo = './blacklogo.jpg'
-const whiteLogo = './whitelogo.jpg'
+const blackLogo = 'blacklogo.jpg'
+const whiteLogo = 'whitelogo.jpg'
 const menu = [
   {
     path: '/',
@@ -23,12 +23,12 @@ const menu = [
     name: '2: contact',
   },
   {
-	  path: '/portfolio',
-	  name: '3: portfolio',
+	path: '/portfolio',
+	name: '3: portfolio',
   },
   {
-	  path: '/setup',
-	  name: '4: setup',
+	path: '/setup',
+	name: '4: setup',
   }
 ]
 const SHORTCUTS = ['Digit0', 'Digit1', 'Digit2', 'Digit3', 'Digit4']
@@ -110,7 +110,7 @@ function Layout({ children, isHomepage, secondaryPage, portfolio}) {
   if (!mounted) return <div />
 
   return (
-    <>
+	  <>
 	   <ElectronicFrontier />
       <div className="top-menu">
         <Row>
