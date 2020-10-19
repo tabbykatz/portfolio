@@ -11,8 +11,8 @@ function About() {
     <>
       <Layout secondaryPage>
         <div style={{ marginTop: 50 }}>
-          <h1 className="main-h1 about-h1">
-            About me.
+          <h1 className="blog-title">
+            Hi, I'm Tabitha.
           </h1>
 
           <div className="about-intro">

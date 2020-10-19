@@ -13,6 +13,7 @@ function Writing({ content, data }) {
   const frontmatter = data
   const { title, author } = frontmatter
   const avatar = `https://images.weserv.nl/?url=https://unavatar.now.sh/twitter/${author.twitter}&w=40`
+  const katz = `/katz.png`
   const { text } = readingTime(content)
 
   return (
@@ -66,8 +67,8 @@ function Writing({ content, data }) {
               Thanks for reading, 
 
               <br />
-
-              Tabitha
+			<object className="kitten" data={katz}> {katz} </object>
+              <div className="sig-name">Tabitha</div>
             </div>
           </div>
         </div>
