@@ -7,8 +7,8 @@ import { useRouter } from 'next/router'
 import { currentDayName } from '../utils/dateUtils'
 import ElectronicFrontier from './ElectronicFrontier'
 
-const blackLogo = 'blacklogo.jpg'
-const whiteLogo = 'whitelogo.jpg'
+const blackLogo = '/blacklogo.jpg'
+const whiteLogo = '/whitelogo.jpg'
 const menu = [
   {
     path: '/',
