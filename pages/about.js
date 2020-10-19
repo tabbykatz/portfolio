@@ -11,7 +11,7 @@ function About() {
     <>
       <Layout secondaryPage>
         <div style={{ marginTop: 50 }}>
-          <h1 className="blog-title">
+          <h1 className="main-h1 about-h1">
             Hi, I'm Tabitha.
           </h1>
 
@@ -25,9 +25,7 @@ As I complete my specialization as a full stack engineer, I hope to solidify my 
 </div>
               </Col>
             </Row>
-
-            <hr />
-
+			<br /><br /> 
             What I've worked with so far:
 
             <Row style={{ marginTop: 30 }} className="data-icon">

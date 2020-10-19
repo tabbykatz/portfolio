@@ -18,8 +18,7 @@ function Contact() {
 	  Isolation is real for all of us right now, so please reach out. I'd love to hear what you think of my projects.
               </Col>
             </Row>
-
-            <hr />
+		<br /> <br />
 	  </div>
 	  </div>
 	  			<div className="contact" width="100%" text-align="center">

@@ -31,7 +31,7 @@ function Writing({ content, data }) {
             </a>
           </Link>
 
-          <h1 className="main-h1">{title}</h1>
+          <h1 className="blog-title">{title}</h1>
 
           <div className="reading-time">
             <BookOpen size="16px" />
@@ -67,7 +67,7 @@ function Writing({ content, data }) {
               Thanks for reading, 
 
               <br />
-			<object className="kitten" data={katz}> {katz} </object>
+			<object className="kitten" data={katz}>{katz}</object>
               <div className="sig-name">Tabitha</div>
             </div>
           </div>
