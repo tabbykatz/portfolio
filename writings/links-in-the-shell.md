@@ -11,10 +11,9 @@ author:
 
 _What's the difference?_
 
----
-
 Many of us have grown up in a world that understands the modern idea of ‘links’. We use what we used to call hyperlinks, we share links to websites with friends. “Link me”, a friend will say, replying to a text extolling the virtues of a particular venue or service. Links connect things. It was true when they literally referred to loops of metal chain, and it’s true within the environment of the a Unix shell.
-<br><br>
+
+
 There are two kinds of links in the shell, as my title suggests. A link is either hard or symbolic.
 
 # Hard Links

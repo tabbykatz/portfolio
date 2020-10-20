@@ -60,7 +60,6 @@ function Writing({ content, data }) {
                 }
               }}
             />
-
             <div />
 
             <div className="signature">

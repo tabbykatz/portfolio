@@ -227,6 +227,7 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1em;
 }
 
+
 .writing-container h1,
 .writing-container h2,
 .writing-container h3,
@@ -263,6 +264,12 @@ h1, h2, h3, h4, h5, h6 {
   font-style: italic;
   margin: 0;
   padding: 0px 30px;
+}
+
+..writing-container blockquote p a {
+	font-family: Montserrat;
+	text-decoration: none;
+	border-bottom: 1px var(--text-color) dashed;
 }
 
 .writing-container p, .reviews-description {
