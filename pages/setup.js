@@ -8,7 +8,7 @@ function Setup({ og }) {
     <>
       <Layout secondaryPage>
 	  <div style={{ marginTop: 50 }}>
-        <h1 className="main-h1 about-h1">My Setup
+        <h1 className="blog-title">My Setup
 	  </h1>
 
         <div className="about-intro">

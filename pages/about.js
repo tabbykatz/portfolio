@@ -11,9 +11,20 @@ function About() {
     <>
       <Layout secondaryPage>
         <div style={{ marginTop: 50 }}>
-          <h1 className="main-h1 about-h1">
+          <h1 className="blog-title">
             Hi, I'm Tabitha.
           </h1>
+<span className="space" />
+<div className="pic-container">
+  <div className="pic-box">
+    <div className="pic-spin-container">
+      <div className="pic-shape">
+        <div className="pic-bd"></div>
+      </div>
+     </div>
+  </div>
+</div>
+<span className="space" />
 
           <div className="about-intro">
             <Row>

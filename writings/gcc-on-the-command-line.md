@@ -1,5 +1,5 @@
 ---
-title: "gcc main.c on the command line"
+title: "`gcc main.c` On the Command Line"
 date: "2020-02-05"
 og:
   description: "Approaching C in the terminal"

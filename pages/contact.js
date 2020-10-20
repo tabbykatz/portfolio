@@ -8,7 +8,7 @@ function Contact() {
     <>
       <Layout secondaryPage>
         <div style={{ marginTop: 50 }}>
-          <h1 className="main-h1 about-h1">
+          <h1 className="blog-title">
             Get in touch.
           </h1>
 

@@ -1,5 +1,5 @@
 ---
-title: "ls -l in the shell"
+title: "`ls -l` In the Shell"
 date: "2020-04-14"
 og:
   description: "Step-by-step behind the curtain."
