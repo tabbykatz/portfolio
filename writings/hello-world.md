@@ -11,13 +11,12 @@ author:
 
 _I have long wanted to publish my writing from the terminal, and now I can!_
 
----
 
 # Inspiration
 
 If you, like me, are new to programming with an interest in front-end
 development, I cannot recommend the twitter dev community strongly enough. I
-started my first round of <a href ="https://www.100daysofcode.com" target="_blank">#100DaysOfCode</a> and found my people. It is through this community that I fell in love with Javascript, for better or worse. It's rare to find a group online that lifts up more than it knocks down, but this is one.
+started my first round of [#100DaysOfCode](https://www.100daysofcode.com) and found my people. It is through this community that I fell in love with Javascript, for better or worse. It's rare to find a group online that lifts up more than it knocks down, but this is one.
 
 # Holberton Portfolio Project
 
@@ -28,7 +27,7 @@ year. I started this project in plain HTML/CSS/js, but quickly realized that if
 I want to build the stretch features I should use React & Next from the start. I have broken this thing more often than not, but that is how I learn best.
 
 
-As I write this, I have two pages left to build: /portfolio & /resume. While
+As I write this, I have two pages left to build: /portfolio & /contact. While
 I originally envisioned my portfolio as a CSS-heavy page, I've decided to keep
 it simple and list projects as I have these blog entries. This is the first
 major project I have completed on my own (without Holberton guidance) and I
@@ -43,4 +42,4 @@ technical blogs for school and pleasure, extoll the virtues of good books or web
 
 
 I hope you'll enjoy reading here, and if you'd like to respond or discuss you
-can find me on <a href ="https://twitter.com/tabby__katz" target="_blank">Twitter</a>.
+can find me on [Twitter](https://twitter.com/tabby__katz).
