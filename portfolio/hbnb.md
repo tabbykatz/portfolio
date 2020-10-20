@@ -29,7 +29,9 @@ certificates. I learned to configure a Master-Replica database between servers,
    - A database or files that store data (data = objects)
    - An API that provides a communication interface between the front-end and your data (retrieve, create, delete, update them)
 
-<p> <a href="https://github.com/tabbykatz/AirBnB_clone_v4" target="_blank">Check it out on Github</a></p>
 
+<p> <a href="https://github.com/tabbykatz/AirBnB_clone_v4" target="_blank">Check it out on Github</    a></p>
 
+<div class="blog-icon"><img class="blog-icon" src="/python.svg" alt="python"/><img class="blog-icon" src="/linux.svg" alt="linux"/><img class="blog-icon" src="/json.svg" alt="json"/><img class="blog-icon" src="/nginx.svg" alt="nginx"/><img class="blog-icon" src="/mysql.svg" alt="mysql"/><img class="blog-icon" src="/css3.svg" alt="css3"/><img class="blog-icon" src="/html5.svg" alt="html5"/><img class="blog-icon" src="/node-dot-js.svg" alt="node.js"/><img class="blog-icon" src="/flask.svg" alt="flask"/><img class="blog-icon" src="/puppet.svg" alt="puppet"/>
+</div>
 

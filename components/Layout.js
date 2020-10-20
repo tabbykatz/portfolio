@@ -48,7 +48,9 @@ const QUOTES = [
 	`Peers can be the best teachers, because they're the ones that remember what it's like to not understand. -Peter Norvig`,
 	`Computer language design is just like a stroll in the park. Jurassic Park, that is. -Larry Wall`,
 	`Computers are useless. They can only give you answers. -Pablo Picasso`,
-
+	`There are no solutions, only trade-offs -Thomas Sowell`,
+	`Any fool can write code that a computer can understand. Good programmers write code that humans can understand. -Martin Fowler`,
+	`Always code as if the person who ends up maintaining your code will be a violent psychopath who knows where you live. -John Woods`,
 ]
 const PROJECTS = [
 	`Have a look at some of my projects!`,
@@ -56,6 +58,7 @@ const PROJECTS = [
 	`I've come a long way, baby! Check out some of my projects.`, 
 	`Make things.`,
 	`When I make new things, I add them here. Have a look!`,
+	`A collection of things I've built.`,
 	]
 function Layout({ children, isHomepage, secondaryPage, portfolio}) {
   const router = useRouter()
@@ -186,7 +189,7 @@ function Layout({ children, isHomepage, secondaryPage, portfolio}) {
 
       <footer>
         <div>Happy {currentDayName()}!</div>
-        <div>&copy; {new Date().getFullYear()}</div>
+        <div>writings are &copy; {new Date().getFullYear()} tabbykatz</div>
       </footer>
     </>
   )

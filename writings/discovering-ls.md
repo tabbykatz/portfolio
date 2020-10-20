@@ -3,7 +3,7 @@ title: "Discovering ls"
 date: "2020-02-03"
 og:
   description: "A technical blog entry for Holberton."
-  image: "https://tabbykatzdotcom.files.wordpress.com/2020/09/b1acc816-c6a9-4330-b196-63cbb725ff3a.jpg"
+  image: "bash.png"
 author:
   twitter: "tabby__katz"
   name: "Tabitha O'Melay"
@@ -11,6 +11,7 @@ author:
 
 _An early writing assignment for Holberton, when I was first learning the shell. Adorable!_
 
+![](/bash.png)
 
 I am a new Holberton student. My cohort consists of 20 fresh-faced software engineering hopefuls, each at different stages in our understanding of the ins and outs of programming. We are learning in leaps as peers in an environment where we are encouraged to come together and solidify what we are grasping as a group. In such a peer-learning school, we are emboldened to share what we know even when our understanding is young.
 

@@ -25,8 +25,8 @@ This was one of my first questions when presented with this project, but I
 Monty is a "fake" language created just for the purpose of challenging
 	students. You can read more at http://montyscoconut.github.io/.
 
-
 <p> <a href="https://github.com/tabbykatz/monty" target="_blank">Check it out on Github</a></p>
 
-
+<div class="blog-icon"><img class="blog-icon" src="/linux.svg" alt="linux"/><img class="blog-icon" src="/c.svg" alt="C"/>
+</div>
 
