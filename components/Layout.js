@@ -150,7 +150,7 @@ function Layout({ children, isHomepage, secondaryPage, portfolio}) {
           <Col {...containerProps}>
             {!secondaryPage && (
               <div style={{ textAlign: 'center' }}>
-                <h1 className="blog-title">
+                <h1 className="blog-title text-focus-in">
 				{!secondaryPage && !portfolio ? quote : projectIntro}
                 </h1>
 

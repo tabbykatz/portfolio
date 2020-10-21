@@ -14,7 +14,6 @@ function About() {
           <h1 className="blog-title">
             Hi, I'm Tabitha.
           </h1>
-<span className="space" />
 <div className="pic-container">
   <div className="pic-box">
     <div className="pic-spin-container">
@@ -24,7 +23,6 @@ function About() {
      </div>
   </div>
 </div>
-<span className="space" />
 
           <div className="about-intro">
             <Row>
