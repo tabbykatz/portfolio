@@ -177,7 +177,7 @@ body {
   font-size: 13px;
   text-transform: uppercase;
   padding: 4px 10px 6px;
-  border-radius: 5px;
+  border-radius: 10px;
   letter-spacing: -.5px;
   font-weight: 500;
   font-family: 'Space Mono', ibm-plex-mono, Monaco, 'Lucida Console' !important;
@@ -293,6 +293,8 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+/* end blur-in */
+
 .blog-title {
   font-family: 'Space Mono', ibm-plex-mono, Monaco, 'Lucida Console';
   font-style: italic;
@@ -392,7 +394,13 @@ h1, h2, h3, h4, h5, h6 {
   padding: 4px 0;
   line-height: 1.8em;
   font-size: 20px;
-  color: var(--article-text-color);
+  color: var(--text-color);
+}
+
+.writing-container ul li a {
+	 color: var(--text-color);
+	 text-decoration: none;
+	 border-bottom: 1px var(--text-color) dashed;
 }
 
 .writing-container blockquote {
