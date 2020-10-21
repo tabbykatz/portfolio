@@ -16,7 +16,7 @@ letter._
 
 ![How This Page Renders](/md-example.png)
 
-To embed images, you can link to the public folder or an outside url. You don't need a complete path if the image is in the public folder.
+To embed images like the one above, you can link to the public folder or an outside url. You don't need a complete path if the image is in the public folder.
 
 `![Alt Text](/image-in-public-folder.png)`
 
@@ -52,7 +52,7 @@ You can do this on a new line or `inline`.
 
 # Codeblocks
 
-Codeblocks are a fun touch, and enable to reader to copy the code with a single click. Here is a simple function:
+Codeblocks are a fun touch, and enable the reader to copy the code with a single click. Here is a simple function:
 
 
 ```python
@@ -102,7 +102,17 @@ Lists can be made with dashes, asterisks, or numerals.
 
 [![Markdown: syntax basics](http://img.youtube.com/vi/0_tO8HgJiLQ/0.jpg)](http://www.youtube.com/watch?v=0_tO8HgJiLQ "Markdown: syntax basics")
 
-The video above is embedded using an online tool called [Embed Youtube](http://embedyoutube.org/). 
+The video above is embedded using an online tool called [Embed
+YouTube](http://embedyoutube.org/). This makes a static image from the video
+into a linked image to the video itself. 
+
+
+But you can also write html in markdown files and see the results. Below, I've
+pasted the embed `<iframe>` from YouTube.
+
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/0_tO8HgJiLQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 
 # More Markdown Tricks? 
 
