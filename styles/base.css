@@ -390,6 +390,10 @@ h1, h2, h3, h4, h5, h6 {
   font-family: Montserrat;
 }
 
+.writing-container ol {
+	font-family: Montserrat;
+	font-size: 20px;
+}
 .writing-container ul li {
   padding: 4px 0;
   line-height: 1.8em;
