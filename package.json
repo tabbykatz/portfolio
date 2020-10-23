@@ -19,7 +19,6 @@
     "next": "^9.5.5",
     "next-compose-plugins": "^2.2.0",
     "next-transpile-modules": "^2.3.1",
-    "raw-loader": "^4.0.1",
     "react": "^16.14.0",
     "react-copy-to-clipboard": "^5.0.2",
     "react-dom": "^16.14.0",
@@ -35,6 +34,7 @@
     "svg-inline-loader": "^0.8.2"
   },
   "devDependencies": {
-    "file-loader": "^6.1.1"
+    "file-loader": "^6.1.1",
+    "raw-loader": "^4.0.2"
   }
 }

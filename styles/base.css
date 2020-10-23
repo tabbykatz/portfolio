@@ -78,7 +78,7 @@ body {
 }
 
 .pic-container {
-  height: 70vh;
+  height: 55vmin;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -86,8 +86,8 @@ body {
 }
 
 .pic-box {
-  width: 65vmin;
-  height: 65vmin;
+  width: 50vmin;
+  height: 50vmin;
   /*border: 1px dashed rgba(255,255,255,0.4);*/
   position: relative;
   

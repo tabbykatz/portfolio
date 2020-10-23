@@ -21,6 +21,7 @@ function Contact() {
 		<br /> <br />
 	  </div>
 	  </div>
+
 	  			<div className="contact" width="100%" text-align="center">
 				<a href="https://github.com/tabbykatz" target="_blank">Github</a> - <a href="https://twitter.com/tabby__katz" target="_blank">Twitter</a> - <a href="https://www.linkedin.com/in/tabbykatz/" target="_blank">LinkedIn</a> - <a href="mailto:tomelay@gmail.com">Email</a>
 	  			</div>

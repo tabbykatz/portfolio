@@ -31,6 +31,12 @@ const menu = [
 	name: '4: setup',
   }
 ]
+const landingMenu= [
+    {
+        path: '/',
+        name: '0: see the project',
+    }
+]
 const SHORTCUTS = ['Digit0', 'Digit1', 'Digit2', 'Digit3', 'Digit4']
 const QUOTES = [
   `There are 10 types of people in this world, those who understand binary and those who don't.`,
@@ -60,7 +66,13 @@ const PROJECTS = [
 	`When I make new things, I add them here. Have a look!`,
 	`A collection of things I've built.`,
 	]
-function Layout({ children, isHomepage, secondaryPage, portfolio}) {
+const LANDING = [
+  `Welcome to the landing page for my React website!`,
+  `Serverside rendering of html? Who knew!`,
+  `A static website that is anything but static`,
+  `I wanted a portfolio site. What I found with React was so much more.`,
+]
+function Layout({ children, isHomepage, secondaryPage, portfolio, Landing}) {
   const router = useRouter()
   const onLoadTheme = typeof localStorage !== 'undefined' && localStorage.getItem('BLOG_THEME')
   const [theme, setTheme] = useState(onLoadTheme)
@@ -68,7 +80,9 @@ function Layout({ children, isHomepage, secondaryPage, portfolio}) {
 	// randomized quotes on load
   const [quote] = useState(QUOTES[Math.floor(Math.random() * QUOTES.length)])
 	// random intro to projects
+  const [landingIntro] = useState(LANDING[Math.floor(Math.random() * LANDING.length)])
   const [projectIntro] = useState(PROJECTS[Math.floor(Math.random() * PROJECTS.length)])
+
   const switchTheme = () => {
     const setTo = theme === 'dark' ? 'light' : 'dark'
 
@@ -107,12 +121,13 @@ function Layout({ children, isHomepage, secondaryPage, portfolio}) {
 
   const containerProps = {
     ...isHomepage || portfolio && { md: 12 },
-    ...!isHomepage && { md: 8, mdOffset: 2 },
+    ...secondaryPage && { md: 8, mdOffset: 2 },
+    ...Landing && { md: 12 },
   }
 
   if (!mounted) return <div />
 
-  return (
+  if (!Landing) return (
 	  <>
 	   <ElectronicFrontier />
       <div className="top-menu">
@@ -126,7 +141,7 @@ function Layout({ children, isHomepage, secondaryPage, portfolio}) {
                   </a>
                 </Link>
               </li>
-
+          
               {menu.map(({ path, name }) => (
                 <li key={name}>
                   <Link href={path} as={path}>
@@ -193,6 +208,87 @@ function Layout({ children, isHomepage, secondaryPage, portfolio}) {
       </footer>
     </>
   )
+
+if (Landing) return (
+	  <>
+	   <ElectronicFrontier />
+      <div className="top-menu">
+        <Row>
+          <Col xs={10}>
+            <ul>
+              <li className="logo">
+                <Link href="/landing" as="/landing">
+                  <a>
+	  {theme === 'dark' ? <img src={whiteLogo} /> : <img src={blackLogo} />}
+                  </a>
+                </Link>
+              </li>
+
+              {landingMenu.map(({ path, name }) => (
+                <li key={name}>
+                  <Link href={path} as={path}>
+                    <a>{name}</a>
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </Col>
+
+          <Col xs={2} style={{ textAlign: 'right' }}>
+            <button className="theme-switch-button" onClick={() => switchTheme()}>
+              {theme === 'dark' ? <Zap /> : <Zap />}
+            </button>
+          </Col>
+        </Row>
+      </div>
+
+      <Grid>
+        <Row>
+          <Col {...containerProps}>
+            {!secondaryPage && (
+              <div style={{ textAlign: 'center' }}>
+                <h1 className="blog-title text-focus-in">
+				{landingIntro}
+                </h1>
+
+              </div>
+            )}
+
+            {children}
+
+            {secondaryPage && (
+              <div className="bottom-mobile-nav">
+                <Row>
+                  <Col xs={6} />
+
+                  <Col xs={6}>
+                    <button className="theme-switch-button-mobile" onClick={() => switchTheme()}>
+                      {theme === 'dark' ? (
+                        <>
+                          <Zap /> Light
+                        </>
+                      ) : (
+                        <>
+                          <Zap /> Dark
+                        </>
+                      )}
+                    </button>
+                  </Col>
+                </Row>
+              </div>
+            )}
+          </Col>
+        </Row>
+      </Grid>
+
+      <footer>
+        <div>Happy {currentDayName()}!</div>
+        <div>writings are &copy; {new Date().getFullYear()} tabbykatz</div>
+      </footer>
+    </>
+  )
 }
 
 export default Layout
+
+

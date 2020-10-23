@@ -5,10 +5,11 @@ export const SETUP = [
       { name: 'Vim', description: `Yeah, I'm one of those. You should be, too.` , link: 'https://www.vim.org/' },
       { name: 'VimAwesome', description: 'Do cool things with Vim!', link: 'https://vimawesome.com/' },
       { name: 'Firefox', description: 'Never bothers me.', link: 'https://www.mozilla.org/en-US/firefox/new/' },
+      { name: 'UNIX Terminal', description: 'Never needed anything else.', link: 'https://en.wikipedia.org/wiki/Terminal_(macOS)/' },
     ]
   },
   {
-    title: 'Setup',
+    title: 'Hardware',
     stack: [
       { name: 'MacBook Pro 16″', description: '2.3 GHz 8-Core Intel Core i9', link: 'https://www.apple.com/macbook-pro-16/' },
       { name: 'Apple Magic Trackpad 2', description: 'I try to avoid mouse-like behaviour when possible.', link: 'https://www.apple.com/shop/product/MJ2R2LL/A/magic-trackpad-2-silver' },
