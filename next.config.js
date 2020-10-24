@@ -1,8 +1,9 @@
 const withTM = require('next-transpile-modules');
 const withCSS = require('@zeit/next-css');
 const withSass = require('@zeit/next-sass');
+const withImages = require('next-images');
 
-module.exports = withCSS(
+module.exports = withImages(withCSS(
 	withSass(
 		withTM({
   		transpileModules: [
@@ -18,4 +19,4 @@ module.exports = withCSS(
 		  },
 		})
 	)
-);
+));

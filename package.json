@@ -18,6 +18,7 @@
     "gray-matter": "^4.0.2",
     "next": "^9.5.5",
     "next-compose-plugins": "^2.2.0",
+    "next-images": "^1.6.0",
     "next-transpile-modules": "^2.3.1",
     "react": "^16.14.0",
     "react-copy-to-clipboard": "^5.0.2",

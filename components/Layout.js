@@ -35,7 +35,20 @@ const landingMenu= [
     {
         path: '/',
         name: '0: see the project',
+    },
+    {
+        path: '/landing/#features',
+        name: '1: features',
+    },
+    {
+        path: '/landing/#about',
+        name: '2: about Tabitha',
+    },
+    {
+        path: '/landing/#shout',
+        name: '3: Shoutouts!',
     }
+
 ]
 const SHORTCUTS = ['Digit0', 'Digit1', 'Digit2', 'Digit3', 'Digit4']
 const QUOTES = [

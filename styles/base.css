@@ -36,6 +36,7 @@ body {
   color: var(--text-color);
   margin: 0;
 }
+
 /* make switching smoother */
 * {
   transition: background .2s linear;
@@ -65,6 +66,50 @@ body {
 .top-menu ul li.logo img {
 	width: auto;
 	height: 1.50em;
+}
+
+/* landing page specific */
+
+.landing {
+	width: 100%;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+}
+.landing-pics {
+	border-radius: 15px;
+	border: 3px solid;
+	border-color: var(--secondary-color);
+	height: 25em;
+	width: auto;
+	margin: 20px 20px 20px 20px;
+}
+
+.tooltip-wrap {
+  position: relative;
+}
+.tooltip-wrap .tooltip-content {
+  display: none;
+  position: absolute;
+  bottom: 1px;
+  background-color: #fff;
+  border: 3px solid;
+  border-color: var(--secondary-color);
+  border-radius: 35px;
+  opacity: 85%;
+  padding: .5em;
+  font-color: #000;
+}
+
+.tooltip-content p {
+	font-family: 'Space Mono', ibm-plex-mono, Monaco, 'Lucida Console';	
+	color: #000 !important;
+	font-weight: bold;
+	font-style: italic;
+	font-size: 1em;
+}
+.tooltip-wrap:hover .tooltip-content {
+  display: block;
 }
 
 /* about me picture fun */
@@ -218,6 +263,13 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: bold;
   color: var(--text-color);
   font-weight: 800;
+}
+
+.landing h1 {
+  font-family: 'Space Mono', ibm-plex-mono, Monaco, 'Lucida Console';
+  font-style: italic;
+  font-weight: bold;
+  color: var(--primary-color);
 }
 /* futile attempts to manipulate these icons */
 .blog-icon {
