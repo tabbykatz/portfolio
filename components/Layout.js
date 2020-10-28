@@ -80,10 +80,10 @@ const PROJECTS = [
 	`A collection of things I've built.`,
 	]
 const LANDING = [
-  `Welcome to the landing page for my React website!`,
-  `Serverside rendering of html? Who knew!`,
-  `A static website that is anything but static`,
-  `I wanted a portfolio site. What I found with React was so much more.`,
+  `Welcome to the landing page for my first React build!`,
+  `A portfolio site with hybrid static & server rendering.`,
+  `A Next.js and React driven showcase for my work as an engineer.`,
+  `A portfolio, a blog engine, and professional web presence: unlocked!`,
 ]
 function Layout({ children, isHomepage, secondaryPage, portfolio, Landing}) {
   const router = useRouter()
