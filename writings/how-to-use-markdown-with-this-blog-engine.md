@@ -114,6 +114,36 @@ pasted the embed `<iframe>` from YouTube.
 <iframe width="560" height="315" src="https://www.youtube.com/embed/0_tO8HgJiLQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
+# What does the markdown for this page look like?
+
+
+```html
+---
+title: "How to Use Markdown With This Blog Engine"
+date: "2020-10-21"
+og:
+  description: "A basic guide to writing Markdown that renders well in this
+  engine."
+  image: "/md-example.png"
+author:
+  twitter: "tabby__katz"
+  name: "Tabitha O'Melay"
+---
+
+_If you want to use this setup to write blog posts, here are some tips! This
+section is acheived by using underscores for emphasis and has a drop cap first
+letter._
+
+![How This Page Renders](/md-example.png)
+
+To embed images like the one above, you can link to the public folder or an outside url. You don't need a complete path if the image is in the public folder.
+
+`![Alt Text](/image-in-public-folder.png)`
+
+# This is a header.
+
+...
+```
 # More Markdown Tricks? 
 
 Learning Markdown can help you write slick README files, publish a blog like this one, and much more. I have only shared a little, so I'll leave you with a few resources:
