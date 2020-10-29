@@ -12,9 +12,9 @@ author:
 
 _you can control how your website looks when it's shared on twitter!_
 
-Twitter Cards have been around for a long time, but perhaps you (like me) aren't sure how to add them to a React app. 
+Twitter Cards have been around for a long time, but perhaps you (like me) aren't sure how to add them to a React app. But it's easy! 
 
-
+https://cards-dev.twitter.com/validator
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzc4NTY2MTY0XX0=
+eyJoaXN0b3J5IjpbLTg0OTkwODM2OF19
 -->
