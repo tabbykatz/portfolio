@@ -33,7 +33,7 @@ I found myself making a React app for the very first time. I still have much to 
       <div id='features'>
 <h1 className = "landing">Features</h1>
 <div className="about-intro">
-The repository for this site has no .html files. All of the visible 'pages' are rendered serverside, and the blog/portfolio content is brought in from Markdown. I love Markdown and publishing my blog from .md files was a feature I built this site around. I also found other features I wanted to incorporate along the way, resulting in a product that exceeds my MVP specification.
+The repository for this site has no .html files, and the blog/portfolio content is brought in from Markdown. I love Markdown and publishing my blog from .md files was a feature I built this site around. I also found other features I wanted to incorporate along the way, resulting in a product that exceeds my MVP specification.
   <h2 className = "landing">Close-up on 3 Key Features:</h2>
   <ul>
       <li><h3>React blog engine using gray-matter and react-markdown to lift entries from .md files</h3></li>
