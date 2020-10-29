@@ -20,7 +20,9 @@ Head over to [developer.twitter](https://developer.twitter.com/en/docs/twitter-f
 ```bash
 vim pages/_app.js
 ```
-Of course, you'll need to change the sample code to , but don't forget to change the closing tags to comply with JSX. Here's my code, for example:
+
+Add the meta tags below any others you might already have in place, or wothing the `
+Of course, you'll need to change the sample code to reflect your information, but don't forget to change the closing tags to comply with JSX. Here's my code, for example:
 
 ```js
 <meta name="twitter:card" content="summary_large_image" />
@@ -33,5 +35,5 @@ Of course, you'll need to change the sample code to , but don't forget to change
 
 https://cards-dev.twitter.com/validator
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NTgzNzI1MjldfQ==
+eyJoaXN0b3J5IjpbMTE0MDYwNTIyMV19
 -->
