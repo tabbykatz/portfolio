@@ -10,9 +10,11 @@ author:
  name: "Tabitha O'Melay"
 ---
 
-_Control how tweets that share you
+_you can control how your website looks when it's shared on twitter!_
+
+Twitter Cards have been around for a long time, but perhaps you (like me) aren't sure how to add them to a React app. 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ5MDc0MjgzNV19
+eyJoaXN0b3J5IjpbMzc4NTY2MTY0XX0=
 -->
