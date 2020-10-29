@@ -21,7 +21,7 @@ Head over to [developer.twitter](https://developer.twitter.com/en/docs/twitter-f
 vim pages/_app.js
 ```
 
-Add the meta tags below any others you might already have in place, or within the `<Head>` tags. Of course, you'll need to change the sample code to reflect your information, but don't forget to change the closing tags to comply with JSX. (`<tag> -> <tag />` Here's my code, for example:
+Add the meta tags below any others you might already have in place, or within the `<Head>` tags. Of course, you'll need to change the sample code to reflect your information, and don't forget to change the closing tags to comply with JSX. (`<tag> -> <tag />` Here's my code, for example:
 
 ```js
 <meta name="twitter:card" content="summary_large_image" />
@@ -32,7 +32,11 @@ Add the meta tags below any others you might already have in place, or within th
 <meta name="twitter:image" content="https://www.tabbykatz.com/bridge.jpg" />
 ```
 
+# Testing it out
+
+It's difficult to preview the card without deploying it, but there are solutions depending on your site. This blog is continuously deplo
+
 https://cards-dev.twitter.com/validator
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNDc3NDExMzVdfQ==
+eyJoaXN0b3J5IjpbNjc0NDY0NjE4XX0=
 -->
