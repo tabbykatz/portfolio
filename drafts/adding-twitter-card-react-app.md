@@ -34,9 +34,7 @@ Add the meta tags below any others you might already have in place, or within th
 
 # Testing it out
 
-It's difficult to preview the card without deploying it, but there are solutions depending on your site. This blog is continuously deplo
-
-https://cards-dev.twitter.com/validator
+It's difficult to preview the card without deploying it, but there are solutions depending on your site. This blog is continuously deployed with Vercel, which allows me to have a development deploy from other branches and use `main` for live deployment. Once you have it somewhere live, though, you can [validate it]( before sharing. https://cards-dev.twitter.com/validator
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjc0NDY0NjE4XX0=
+eyJoaXN0b3J5IjpbLTExMTU5NjMwOTNdfQ==
 -->
