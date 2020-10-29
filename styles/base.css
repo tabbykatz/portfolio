@@ -78,8 +78,7 @@ body {
 }
 
 .gif {
-	height: 25em;
-	width: auto;
+	width: 35em;
 	border: 3px solid;
 	border-color: var(--secondary-color);
 	border-radius: 15px;
@@ -88,8 +87,8 @@ body {
 	border-radius: 15px;
 	border: 3px solid;
 	border-color: var(--secondary-color);
-	height: 25em;
 	width: auto;
+	height: 20em;
 	margin: 20px 20px 20px 20px;
 }
 
