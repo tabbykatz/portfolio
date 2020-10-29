@@ -20,8 +20,18 @@ Head over to [developer.twitter](https://developer.twitter.com/en/docs/twitter-f
 ```bash
 vim pages/_app.js
 ```
-The main changes you'll need to make are your information, but don't forget to change the closing tags to comply with JSX. Here's my card, for example:
+Of course, you'll need to change the sample code to , but don't forget to change the closing tags to comply with JSX. Here's my code, for example:
+
+```js
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@tabby__katz" />
+<meta name="twitter:creator" content="@tabby__katz" />
+<meta name="twitter:title" content="Tabitha O'Melay: Software Engineer" />
+<meta name="twitter:description" content="I'm a Full Stack Software Engineer entering my second year at Holberton School, specializing in Web Stack. Over the past year I have build a foundation in computer science concepts, C, Python, and algorithmic problem-solving." />
+<meta name="twitter:image" content="https://www.tabbykatz.com/bridge.jpg" />
+```
+
 https://cards-dev.twitter.com/validator
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIyMjYyODcwMV19
+eyJoaXN0b3J5IjpbLTE1NTgzNzI1MjldfQ==
 -->
