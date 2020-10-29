@@ -17,7 +17,7 @@ function MyApp({ Component, pageProps }) {
        <meta name="twitter:creator" content="@tabby__katz" />
 <meta name="twitter:title" content="Tabitha O'Melay: Software Engineer" />
 <meta name="twitter:description" content="I'm a Full Stack Software Engineer entering my second year at Holberton School, specializing in Web Stack. Over the past year I have build a foundation in computer science concepts, C, Python, and algorithmic problem-solving." />
-<meta name="twitter:image" content="/bridge.jpg" />
+<meta name="twitter:image" content="https://www.tabbykatz.com/bridge.jpg" />
 
         <script async src="https://platform.twitter.com/widgets.js" charsset="utf-8"></script>
 
