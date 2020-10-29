@@ -11,7 +11,7 @@ author:
 ---
 
 _If you want to use this setup to write blog posts, here are some tips! This
-section is acheived by using underscores for emphasis and has a drop cap first
+section is achieved by using underscores for emphasis and has a drop cap first
 letter._
 
 ![How This Page Renders](/md-example.png)
