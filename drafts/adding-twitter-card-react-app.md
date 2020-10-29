@@ -9,18 +9,16 @@ author:
  name: "Tabitha O'Melay"
 ---
 
-_you can control how your website looks when it's shared on twitter!_
+_you can control how your website looks when it's shared on Twitter!_
 
-Twitter Cards have been around for a long time, but perhaps you (like me) aren't sure how to add them to a React app. Here's how to do it:
+Twitter Cards have been around for a long time, but perhaps you aren't sure how to add them to a React app. Here's how to do it:
 
 # Twitter Cards
 Head over to [developer.twitter](https://developer.twitter.com/en/docs/twitter-for-websites/cards/overview/abouts-cards) and read about the styles you can choose. Sample code is in the articles. Once you have a style picked out, snag the code and return to your terminal. From the root folder of your build:
 
-```bash
-vim pages/_app.js
-```
+`vim pages/_app.js`
 
-Add the meta tags below any others you might already have in place, or within the `<Head>` tags. Of course, you'll need to change the sample code to reflect your information, and don't forget to change the closing tags to comply with JSX. (`<tag> -> <tag />` Here's my code, for example:
+Add the meta tags below any others you might already have in place, within the `<Head>` tags. Of course, you'll need to change the sample code to reflect your information, and don't forget to change the closing tags to comply with JSX. (`<tag> -> <tag />` Here's my code, for example:
 
 ```js
 <meta name="twitter:card" content="summary_large_image" />
@@ -43,5 +41,5 @@ I go back and forth about it, but the fact is that if you have an online presenc
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI2MzkwMjg1OSw1MTE0MjY3MTJdfQ==
+eyJoaXN0b3J5IjpbLTM4MTM0NjQxOCw1MTE0MjY3MTJdfQ==
 -->
