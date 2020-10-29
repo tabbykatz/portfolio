@@ -8,13 +8,12 @@ og:
 author:
   twitter: "tabby__katz"
   name: "Tabitha O'Melay"
----
 
 _If you want to use this setup to write blog posts, here are some tips! This
-section is acheived by using underscores for emphasis and has a drop cap first
+section is achieved by using underscores for emphasis and has a drop cap first
 letter._
 
 ![How This Page Renders](/md-example.png)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYwNzI3MzI1N119
+eyJoaXN0b3J5IjpbMTY3NzY5MTk3Nl19
 -->
