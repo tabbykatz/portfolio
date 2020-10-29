@@ -34,7 +34,7 @@ Add the meta tags below any others you might already have in place, or within th
 
 # Testing it out
 
-It's difficult to preview the card without deploying it, but there are solutions depending on your site. This blog is continuously deployed with [Vercel](https://vercel.com), which allows me to have a dev deploy from anothe and use `main` for live deployment. Once you have it somewhere live, though, you can [validate it](https://cards-dev.twitter.com/validator) before sharing. 
+It's difficult to preview the card without deploying it, but there are solutions depending on your site. This blog is continuously deployed with [Vercel](https://vercel.com), which allows me to have a dev deploy from another Github branch and use `main` for live deployment. Once you have it somewhere live, though, you can [validate it](https://cards-dev.twitter.com/validator) before sharing. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk5MTAxNTY1Myw1MTE0MjY3MTJdfQ==
+eyJoaXN0b3J5IjpbMTEzOTE3MDI1NCw1MTE0MjY3MTJdfQ==
 -->
