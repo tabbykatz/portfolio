@@ -39,7 +39,7 @@ It's difficult to preview the card without deploying it, but there are solutions
 
 
 # SEO
-I go back and forth about it, but the fact is that if you have an online presence you should protect it even if you don't feel like optimizing it. Little things such as Twitter Cards 
+I go back and forth about it, but the fact is that if you have an online presence you should protect it even if you don't feel like optimizing for the most traffic. I've made it a goal to change one thing a week in this regard, whether it's claiming a 'FirstLast' account on a social media platform I don't frequent or 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NzA5OTE5MDksNTExNDI2NzEyXX0=
+eyJoaXN0b3J5IjpbMjEwNjg3OTc0OSw1MTE0MjY3MTJdfQ==
 -->
