@@ -1,9 +1,9 @@
 ---
 title: "Putting a Twitter Card into a React app"
-date: "2020-10-21"
+date: "2020-10-29"
 og:
   description: "You can control how your website looks when it's shared on twitter!"
-  image: "/md-example.png"
+  image: "/twitter-card.png"
 author:
   twitter: "tabby__katz"
  name: "Tabitha O'Melay"
@@ -37,6 +37,8 @@ It's difficult to preview the card without deploying it, but there are solutions
 
 ![Preview of Twitter Card](https://www.tabbykatz.com/twitter-card.png)
 
+
+# SEO
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgzNDg2NjEyMyw1MTE0MjY3MTJdfQ==
+eyJoaXN0b3J5IjpbOTU2ODAyNzA1LDUxMTQyNjcxMl19
 -->
