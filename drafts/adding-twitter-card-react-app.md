@@ -8,10 +8,11 @@ og:
 author:
   twitter: "tabby__katz"
  name: "Tabitha O'Melay"
-
 ---
+
+_Control how tweets that share you
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA0NzIxODEyXX0=
+eyJoaXN0b3J5IjpbLTQ5MDc0MjgzNV19
 -->
