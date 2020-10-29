@@ -1,9 +1,8 @@
 ---
-title: "How to Use Markdown With This Blog Engine"
+title: "Putting a Twitter Card into a React app"
 date: "2020-10-21"
 og:
-  description: "A basic guide to writing Markdown that renders well in this
-  engine."
+  description: "You can control how your website looks when it's shared on twitter!"
   image: "/md-example.png"
 author:
   twitter: "tabby__katz"
@@ -38,7 +37,6 @@ It's difficult to preview the card without deploying it, but there are solutions
 
 ![Preview of Twitter Card](https://www.tabbykatz.com/twitter-card.png)
 
-Wonky shares woth missing
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYzMzU2MzcwMyw1MTE0MjY3MTJdfQ==
+eyJoaXN0b3J5IjpbLTgzNDg2NjEyMyw1MTE0MjY3MTJdfQ==
 -->
