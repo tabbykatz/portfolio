@@ -15,9 +15,11 @@ _you can control how your website looks when it's shared on twitter!_
 Twitter Cards have been around for a long time, but perhaps you (like me) aren't sure how to add them to a React app. Here's how to do it:
 
 # Twitter Cards
-Head over to 
-https://developer.twitter.com/en/docs/twitter-for-websites/cards/overview/abouts-cards
+Head over to [developer.twitter](https://developer.twitter.com/en/docs/twitter-for-websites/cards/overview/abouts-cards) and read about the styles you can choose. Sample code is in the articles. Once you have a style picked out, snag the code and return to your terminal.
+
+```bash
+
 https://cards-dev.twitter.com/validator
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIyOTQxOTQ4NV19
+eyJoaXN0b3J5IjpbLTE3NzE2Nzk4MzRdfQ==
 -->
