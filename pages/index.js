@@ -17,7 +17,7 @@ function freshWriting(date) {
   const writingDate = new Date(date).getTime()
   const today = new Date().getTime()
 
-  return today - writingDate < (60 * 60 * 1000 * 24 * 2) // 2 days old
+  return today - writingDate < (60 * 60 * 1000 * 24 * 2) // if writing is < 2 days old use pulse
 }
 
 function Homepage({ writings }) {

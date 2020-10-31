@@ -66,7 +66,7 @@ function Writing({ content, data }) {
               Thanks for reading, 
 
               <br />
-			<object className="kitten" data={katz}>{katz}</object>
+			<object className="kitten" data={katz} />
               <div className="sig-name">Tabitha</div>
             </div>
           </div>
