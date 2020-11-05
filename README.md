@@ -58,7 +58,7 @@ I was well on my way to a static HTML website when I took a detour and tried my 
 
 Because I chose a personal project, I worked solo. I utilized tutorials, countless 'googles', forums, Twitter, and the good old docs to solve problems as I came up against them. I encountered many issues that required I make executive decisions in order to meet my deadline. I am extremely pleased with the result and still have work to do– that's a splendid feeling. 
 
-Read more in my blog post, [The Making of This Site](https://www.tabitha/tech/writings/making-of-this-website).
+Read more in my blog post, [The Making of This Site](https://www.tabitha.tech/writings/making-of-this-website).
 
 
 ### Built With
@@ -119,7 +119,7 @@ See the [open issues](https://github.com/tabbykatz/portfolio/issues) for a list 
 <!-- THE BUILD -->
 ## Project Build
 
-This website build is my capstone project for [Holberton School's](https://www.holbertonschool.com) Foundations year. You can read more about my process both at the [landing page](https:///www.tabitha.tech/landing) and in my blog post on the subject, [The Making of this Site](https:///www.tabitha.tech/writings/making-of-this-website).
+This website build is my capstone project for [Holberton School's](https://www.holbertonschool.com) Foundations year. You can read more about my process both at the [landing page](https:///www.tabitha.tech/landing) and in my blog post on the subject, [The Making of this Site](https://www.tabitha.tech/writings/making-of-this-website).
 
 <!-- Contributing -->
 
