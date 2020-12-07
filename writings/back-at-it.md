@@ -11,7 +11,7 @@ author:
 
 _After a 3 week break, I'm back at the keyboard._
 
- Had a good break. After graduating from my foundational year as a software engineering student, I turned off my computer. The final weeks of the program were stressful; I de-stressed with gardening, reorganizing around the house, and even a weekened away. I had not seen the Pacific in months, though I live very near to it.
+ Had a good break. After graduating from my foundational year as a software engineering student, I turned off my computer. The final weeks of the program were stressful; I de-stressed with gardening, reorganizing around the house, and even a weekend away. I had not seen the Pacific in months, though I live very near to it.
 
 ![beautiful, cold November in Monterey](/monterey.jpeg)
 
