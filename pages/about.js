@@ -28,9 +28,7 @@ function About() {
             <Row>
               <Col md={12}>
 	  <div className="about-intro">
-	  I'm a full stack engineer starting my Specializations year at Holberton School, where I've built a strong foundation in C and Python, developed projects ranging from a simple shell to an AirBnb clone. I have an affinity for bitwise operators, SQL (even if it's intimidating at times), and 'useless' front-end technologies.
-                <br /><br />
-As I complete my specialization as a full stack engineer, I hope to solidify my foundation while also learning new skills and finding my place in the community.
+                I'm a self-taught software dev with a strong foundation in C, Python, and Javascript. I am comfortable on the Linux command line and have plenty of DevOps experience. I derive real joy from problem-solving and the discovery of odd things in the world of code.<br /><br />
 </div>
               </Col>
             </Row>

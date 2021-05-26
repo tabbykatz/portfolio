@@ -15,7 +15,7 @@ function Setup({ og }) {
 	  	<Row>
 	  <Col md={12}>
 	  <div className="about-intro">
-          I have been lucky to receive a lot of support as I transition from housewife to software engineer, and some of that has been in the form of material additions to my setup, but much has been valuable advice & recommendations. Thought I'd share what I use here.
+      What programmer worth their salt doesn't have strong opinions about the tools they use? So, for the curious, here's where I sit with hardware & software choices. I'm a work in progress and I love to try new things, so let me know if you think I should open my mind to something new. (Except Emacs. Never Emacs.) 
         </div>
 	  </Col>
 	  </Row>
