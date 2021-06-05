@@ -109,7 +109,7 @@ body {
 }
 
 .tooltip-content p {
-	font-family: 'Space Mono', ibm-plex-mono, Monaco, 'Lucida Console';	
+	font-family: 'Space Mono', ibm-plex-mono, Monaco, 'Lucida Console';
 	color: #000 !important;
 	font-weight: bold;
 	font-style: italic;
@@ -142,8 +142,9 @@ body {
   height: 50vmin;
   /*border: 1px dashed rgba(255,255,255,0.4);*/
   position: relative;
-  
-  &::before {
+}
+
+  .pic-box::before {
     content: "";
     position: absolute;
     top: 0;
@@ -154,7 +155,7 @@ body {
     /* border: 1px dashed rgba(255,255,255,0.4);*/
     transform: scale(1.42);
   }
-}
+
 
 .pic-spin-container {
   width: 95%;
@@ -197,8 +198,8 @@ body {
 }
 
 @keyframes morph {
-  0% {border-radius: 40% 60% 60% 40% / 60% 30% 70% 40%;} 
-  100% {border-radius: 40% 60%;} 
+  0% {border-radius: 40% 60% 60% 40% / 60% 30% 70% 40%;}
+  100% {border-radius: 40% 60%;}
 }
 
 @keyframes spin {
@@ -474,7 +475,7 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0px 30px;
 }
 
-..writing-container blockquote p a {
+.writing-container blockquote p a {
 	font-family: Montserrat;
 	text-decoration: none;
 	border-bottom: 1px var(--text-color) dashed;
@@ -709,6 +710,18 @@ footer {
   color: var(--text-color);
 }
 
+.setup-img {
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    border: 1px solid;
+    border-color: var(--secondary-color);
+    min-width: 75%;
+    width: auto;
+    height: 25em;
+    margin: 20px 20px 20px 20px;
+  }
 .contact {
   font-family: Montserrat !important;
   font-size: 20px;

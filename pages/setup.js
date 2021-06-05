@@ -13,9 +13,12 @@ function Setup({ og }) {
 
         <div className="about-intro">
 	  	<Row>
+        <div className="setup-div">
+          <img className="setup-img" src="/setup_image_2021.jpg"></img>
+        </div>
 	  <Col md={12}>
 	  <div className="about-intro">
-      What programmer worth their salt doesn't have strong opinions about the tools they use? So, for the curious, here's where I sit with hardware & software choices. I'm a work in progress and I love to try new things, so let me know if you think I should open my mind to something new. (Except Emacs. Never Emacs.) 
+      What programmer worth their salt doesn't have strong opinions about the tools they use? So, for the curious, here's where I sit with hardware & software choices. I'm a work in progress and I love to try new things, so let me know if you think I should open my mind to something new. (Except Emacs. Never Emacs.)
         </div>
 	  </Col>
 	  </Row>

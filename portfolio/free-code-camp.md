@@ -25,10 +25,12 @@ Extensive, not exhaustive (what is?). I have made it my goal to complete every
 single certification, though recently my focus has been on end-of-trimester
 projects. I have picked up a lot of knowledge while also discovering areas I
 need to strengthen further, and I am proud of my progress
-through the curriculum. 
+through the curriculum.
 
 
 <p> <a href="https://www.freecodecamp.org/tabbykatz" target="_blank">Watch my progress on Free Code Camp!</a></p>
+
+![Responsive Web Design Certification from fCC](/Responsive_Web_Cert.png)
 
 
 
