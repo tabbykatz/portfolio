@@ -718,9 +718,8 @@ footer {
     border: 1px solid;
     border-color: var(--secondary-color);
     min-width: 75%;
-    width: auto;
-    height: 25em;
-    margin: 20px 20px 20px 20px;
+    width: 50vw;
+    height: auto;
   }
 .contact {
   font-family: Montserrat !important;
