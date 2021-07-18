@@ -1,6 +1,6 @@
 ---
 title: "Week 1"
-date: "2021-07-10"
+date: "2021-07-17"
 og:
   description: "My first week at Techtonica"
   image: "./techpic.jpg"
