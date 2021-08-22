@@ -502,12 +502,13 @@ h1, h2, h3, h4, h5, h6 {
 
 .writing-container *:not(pre) > code {
   font-family: 'Space Mono', ibm-plex-mono, Monaco, 'Lucida Console';
-  border: 1px var(--primary-color) dashed;
+  border: none;
+  /* 1px var(--primary-color) dashed; */
   color: var(--primary-color);
-  padding: 4px 7px 7px;
-  border-radius: 4px;
+  padding: 4px 4px 4px;
+  /* border-radius: 4px; */
   line-height: 1em;
-  font-size: 17px;
+  font-size: 20px;
   display: inline-flex;
 }
 
