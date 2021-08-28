@@ -1,8 +1,8 @@
-@import url('https://use.typekit.net/cyw3eir.css');
-@import url('https://fonts.googleapis.com/css2?family=Space Mono');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat');
+@import url("https://use.typekit.net/cyw3eir.css");
+@import url("https://fonts.googleapis.com/css2?family=Space Mono");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat");
 :root {
-	/* not-quite white is easier on the eyes */
+  /* not-quite white is easier on the eyes */
   --primary-color: #bc6c25;
   --secondary-color: #dda15e;
   --dark-grey: #666;
@@ -22,16 +22,19 @@
   --article-text-color: #eee;
 }
 
-::-moz-selection, ::selection {
+::-moz-selection,
+::selection {
   background: var(--primary-color);
-  color: #fff;}
+  color: #fff;
+}
 
 html {
-  font-family: 'Space Mono', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: "Space Mono", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 body {
-  font-family: 'Space Mono', ibm-plex-mono, Monaco, 'Lucida Console';
+  font-family: "Space Mono", ibm-plex-mono, Monaco, "Lucida Console";
   background-color: var(--background-color);
   color: var(--text-color);
   margin: 0;
@@ -39,7 +42,7 @@ body {
 
 /* make switching smoother */
 * {
-  transition: background .2s linear;
+  transition: background 0.2s linear;
 }
 
 .top-menu {
@@ -57,39 +60,70 @@ body {
 }
 
 .top-menu ul li.logo a {
-
   font-size: 25px;
   display: inline-block;
   vertical-align: middle;
 }
- /* tabbykatz */
+/* tabbykatz */
 .top-menu ul li.logo img {
-	width: auto;
-	height: 1.50em;
+  width: auto;
+  height: 1.5em;
+}
+blockquote.twitter-tweet {
+  display: inline-block;
+  font-family: "Helvetica Neue", Roboto, "Segoe UI", Calibri, sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 16px;
+  border-color: #eee #ddd #bbb;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 1px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+  margin: 10px 5px;
+  padding: 0 16px 16px 16px;
+  max-width: 468px;
 }
 
+blockquote.twitter-tweet p {
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 20px;
+}
+
+blockquote.twitter-tweet a {
+  color: inherit;
+  font-weight: normal;
+  text-decoration: none;
+  outline: 0 none;
+}
+
+blockquote.twitter-tweet a:hover,
+blockquote.twitter-tweet a:focus {
+  text-decoration: underline;
+}
 /* landing page specific */
 
 .landing {
-	width: 100%;
-	display: inline-flex;
-	align-items: center;
-	justify-content: center;
+  width: 100%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .gif {
-	width: 35em;
-	border: 3px solid;
-	border-color: var(--secondary-color);
-	border-radius: 15px;
+  width: 35em;
+  border: 3px solid;
+  border-color: var(--secondary-color);
+  border-radius: 15px;
 }
 .landing-pics {
-	border-radius: 15px;
-	border: 3px solid;
-	border-color: var(--secondary-color);
-	width: auto;
-	height: 20em;
-	margin: 20px 20px 20px 20px;
+  border-radius: 15px;
+  border: 3px solid;
+  border-color: var(--secondary-color);
+  width: auto;
+  height: 20em;
+  margin: 20px 20px 20px 20px;
 }
 
 .tooltip-wrap {
@@ -104,16 +138,16 @@ body {
   border-color: var(--secondary-color);
   border-radius: 35px;
   opacity: 85%;
-  padding: .5em;
+  padding: 0.5em;
   font-color: #000;
 }
 
 .tooltip-content p {
-	font-family: 'Space Mono', ibm-plex-mono, Monaco, 'Lucida Console';
-	color: #000 !important;
-	font-weight: bold;
-	font-style: italic;
-	font-size: 1em;
+  font-family: "Space Mono", ibm-plex-mono, Monaco, "Lucida Console";
+  color: #000 !important;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 1em;
 }
 .tooltip-wrap:hover .tooltip-content {
   display: block;
@@ -121,8 +155,8 @@ body {
 
 /* about me picture fun */
 .space {
-	margin: 20px 20px 20px 20px;
-	height: 20px;
+  margin: 20px 20px 20px 20px;
+  height: 20px;
 }
 
 * {
@@ -144,18 +178,17 @@ body {
   position: relative;
 }
 
-  .pic-box::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    border-radius: 50%;
-    /* border: 1px dashed rgba(255,255,255,0.4);*/
-    transform: scale(1.42);
-  }
-
+.pic-box::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  border-radius: 50%;
+  /* border: 1px dashed rgba(255,255,255,0.4);*/
+  transform: scale(1.42);
+}
 
 .pic-spin-container {
   width: 95%;
@@ -173,15 +206,15 @@ body {
   position: relative;
   overflow: hidden;
   z-index: 5;
-  }
+}
 .pic-bd {
   width: 142%;
   height: 142%;
   position: absolute;
   left: -21%;
   top: -21%;
-   background-image: url("/avatar.jpg");
-   /*background: url(https://ibb.co/MM0HjkQ);*/
+  background-image: url("/avatar.jpg");
+  /*background: url(https://ibb.co/MM0HjkQ);*/
   background-size: 100%;
   background-position: center center;
   display: flex;
@@ -198,8 +231,12 @@ body {
 }
 
 @keyframes morph {
-  0% {border-radius: 40% 60% 60% 40% / 60% 30% 70% 40%;}
-  100% {border-radius: 40% 60%;}
+  0% {
+    border-radius: 40% 60% 60% 40% / 60% 30% 70% 40%;
+  }
+  100% {
+    border-radius: 40% 60%;
+  }
 }
 
 @keyframes spin {
@@ -211,11 +248,10 @@ body {
 
 /* kitten icon */
 .kitten {
-	height: 3em;
-	width: auto;
-	display: inline-block;
-	position: relative;
-
+  height: 3em;
+  width: auto;
+  display: inline-block;
+  position: relative;
 }
 .top-menu ul li.logo a:hover {
   background: none;
@@ -232,14 +268,18 @@ body {
   text-transform: uppercase;
   padding: 4px 10px 6px;
   border-radius: 10px;
-  letter-spacing: -.5px;
+  letter-spacing: -0.5px;
   font-weight: 500;
-  font-family: 'Space Mono', ibm-plex-mono, Monaco, 'Lucida Console' !important;
-  transition: all .2s linear;
+  font-family: "Space Mono", ibm-plex-mono, Monaco, "Lucida Console" !important;
+  transition: all 0.2s linear;
 }
 
 .top-menu ul li a:hover {
-  background: linear-gradient(45deg, var(--primary-color) 30%, var(--secondary-color) 70%);
+  background: linear-gradient(
+    45deg,
+    var(--primary-color) 30%,
+    var(--secondary-color) 70%
+  );
   color: var(--background-color);
 }
 
@@ -261,13 +301,19 @@ body {
 }
 
 .amp {
-  font-family: 'Space Mono', Baskerville, 'Goudy Old Style', Palatino, 'Book Antiqua', serif;
+  font-family: "Space Mono", Baskerville, "Goudy Old Style", Palatino,
+    "Book Antiqua", serif;
   font-style: italic;
   font-weight: normal;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Space Mono', ibm-plex-mono, Monaco, 'Lucida Console';
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Space Mono", ibm-plex-mono, Monaco, "Lucida Console";
   font-style: italic;
   font-weight: bold;
   color: var(--text-color);
@@ -275,33 +321,33 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .landing h1 {
-  font-family: 'Space Mono', ibm-plex-mono, Monaco, 'Lucida Console';
+  font-family: "Space Mono", ibm-plex-mono, Monaco, "Lucida Console";
   font-style: italic;
   font-weight: bold;
   color: var(--primary-color);
 }
 /* futile attempts to manipulate these icons */
 .blog-icon {
-	fill: var(--text-color) !important;
-	height: 50px !important;
-	width: auto !important;
-	float: left;
-    padding: 10px;
+  fill: var(--text-color) !important;
+  height: 50px !important;
+  width: auto !important;
+  float: left;
+  padding: 10px;
 }
 
 .blog-icon div {
-	fill: var(--text-color) !important;
+  fill: var(--text-color) !important;
 }
 .blog-icon path {
-	fill: var(--text-color) !important;
+  fill: var(--text-color) !important;
 }
 
 .blog-icon img {
-	fill: var(--text-color) !important;
+  fill: var(--text-color) !important;
 }
 
 .blog-icon svg {
-	 fill: var(--text-color) !important;
+  fill: var(--text-color) !important;
 }
 .row::after {
   content: "";
@@ -309,12 +355,12 @@ h1, h2, h3, h4, h5, h6 {
   display: table;
 }
 
-
 /* maybe blur in titles */
 
 .text-focus-in {
-	-webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) 5ms both;
-	        animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) 5ms both;
+  -webkit-animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) 5ms
+    both;
+  animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) 5ms both;
 }
 
 /* ----------------------------------------------
@@ -332,24 +378,24 @@ h1, h2, h3, h4, h5, h6 {
 @-webkit-keyframes text-focus-in {
   0% {
     -webkit-filter: blur(12px);
-            filter: blur(12px);
+    filter: blur(12px);
     opacity: 0;
   }
   100% {
     -webkit-filter: blur(0px);
-            filter: blur(0px);
+    filter: blur(0px);
     opacity: 1;
   }
 }
 @keyframes text-focus-in {
   0% {
     -webkit-filter: blur(12px);
-            filter: blur(12px);
+    filter: blur(12px);
     opacity: 0;
   }
   100% {
     -webkit-filter: blur(0px);
-            filter: blur(0px);
+    filter: blur(0px);
     opacity: 1;
   }
 }
@@ -357,22 +403,26 @@ h1, h2, h3, h4, h5, h6 {
 /* end blur-in */
 
 .blog-title {
-  font-family: 'Space Mono', ibm-plex-mono, Monaco, 'Lucida Console';
+  font-family: "Space Mono", ibm-plex-mono, Monaco, "Lucida Console";
   font-style: italic;
   font-weight: 800;
   font-size: calc(3vw + 3vh);
   text-align: center;
   margin: 100px 0 0;
-  letter-spacing: -.05rem;
+  letter-spacing: -0.05rem;
   line-height: 1em;
-  background: linear-gradient(45deg, var(--primary-color) 32.5%, var(--secondary-color) 50.5%);
+  background: linear-gradient(
+    45deg,
+    var(--primary-color) 32.5%,
+    var(--secondary-color) 50.5%
+  );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   padding-bottom: 20px;
 }
 
 .entry-description {
-  font-family: 'Space Mono', ibm-plex-mono, Monaco, 'Lucida Console';
+  font-family: "Space Mono", ibm-plex-mono, Monaco, "Lucida Console";
   margin-bottom: 50px;
   font-size: 22px;
   color: var(--dark-grey);
@@ -390,23 +440,23 @@ h1, h2, h3, h4, h5, h6 {
 .writing-row a {
   color: var(--text-color);
   display: block;
-  transition: all .2s;
+  transition: all 0.2s;
   text-decoration: none;
 }
 
 .writing-row a:hover {
-  opacity: .2;
+  opacity: 0.2;
 }
 
 .writing-row .writing-date {
-  font-family: 'Space Mono', ibm-plex-mono, Monaco, 'Lucida Console';
+  font-family: "Space Mono", ibm-plex-mono, Monaco, "Lucida Console";
   padding-right: 20px;
   font-size: 14px;
   color: var(--uses-secondary-color);
 }
 
 .writing-row .writing-title {
-  font-family: 'Space Mono', ibm-plex-mono, Monaco, 'Lucida Console';
+  font-family: "Space Mono", ibm-plex-mono, Monaco, "Lucida Console";
   font-style: italic;
   font-weight: 600;
   font-size: 20px;
@@ -414,18 +464,21 @@ h1, h2, h3, h4, h5, h6 {
 }
 /* the big title of the blog on the blog page */
 .main-h1 {
-  font-family: 'Space Mono', ibm-plex-mono, Monaco, 'Lucida Console';
+  font-family: "Space Mono", ibm-plex-mono, Monaco, "Lucida Console";
   font-weight: 800;
   font-size: calc(3vw + 3vh);
-  letter-spacing: -.05rem;
+  letter-spacing: -0.05rem;
   margin: 40px 0 30px;
-  background: linear-gradient(45deg, var(--primary-color) 32.5%, var(--secondary-color) 50.5%);
+  background: linear-gradient(
+    45deg,
+    var(--primary-color) 32.5%,
+    var(--secondary-color) 50.5%
+  );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   line-height: 1em;
   z-index: 1;
 }
-
 
 .writing-container h1,
 .writing-container h2,
@@ -433,7 +486,7 @@ h1, h2, h3, h4, h5, h6 {
 .writing-container h4,
 .writing-container h5,
 .writing-container h6 {
-  font-family: 'Space Mono', ibm-plex-mono, Monaco, 'Lucida Console';
+  font-family: "Space Mono", ibm-plex-mono, Monaco, "Lucida Console";
   letter-spacing: -1px;
 }
 
@@ -443,7 +496,6 @@ h1, h2, h3, h4, h5, h6 {
   margin-right: auto;
   width: 100%;
   height: auto;
-
 }
 
 .writing-container ul {
@@ -454,8 +506,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .writing-container ol {
-	font-family: Montserrat;
-	font-size: 20px;
+  font-family: Montserrat;
+  font-size: 20px;
 }
 .writing-container ul li {
   padding: 4px 0;
@@ -465,9 +517,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .writing-container ul li a {
-	 color: var(--text-color);
-	 text-decoration: none;
-	 border-bottom: 1px var(--text-color) dashed;
+  color: var(--text-color);
+  text-decoration: none;
+  border-bottom: 1px var(--text-color) dashed;
 }
 
 .writing-container blockquote {
@@ -477,13 +529,17 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0px 30px;
 }
 
-.writing-container blockquote p a {
-	font-family: Montserrat;
-	text-decoration: none;
-	border-bottom: 1px var(--text-color) dashed;
+.writing-container
+  blockquote:not(.twitter-tweet)
+  p:not(.twitter-tweet)
+  a:not(.twitter-tweet) {
+  font-family: Montserrat;
+  text-decoration: none;
+  border-bottom: 1px var(--text-color) dashed;
 }
 
-.writing-container p, .reviews-description {
+.writing-container:not(.twitter-tweet) p:not(.twitter-tweet),
+.reviews-description:not(.twitter-tweet) {
   font-family: Montserrat;
   line-height: 1.8em;
   margin-bottom: 40px;
@@ -501,7 +557,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .writing-container *:not(pre) > code {
-  font-family: 'Space Mono', ibm-plex-mono, Monaco, 'Lucida Console';
+  font-family: "Space Mono", ibm-plex-mono, Monaco, "Lucida Console";
   border: none;
   /* 1px var(--primary-color) dashed; */
   color: var(--primary-color);
@@ -513,20 +569,20 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 hr {
-  font-family: 'Space Mono', ibm-plex-mono, Monaco, 'Lucida Console';
+  font-family: "Space Mono", ibm-plex-mono, Monaco, "Lucida Console";
   border: none;
   width: 100%;
   text-align: center;
-  margin:5px auto;
+  margin: 5px auto;
 }
 
 hr:before {
-  content: '===';
+  content: "===";
   font-size: 30px;
   color: var(--hr-color);
 }
 
-.writing-container p a {
+.writing-container p:not(.twitter-tweet) a:not(.twitter-tweet) {
   font-family: Montserrat;
   color: var(--text-color);
   text-decoration: none;
@@ -538,7 +594,7 @@ hr:before {
   color: var(--dark-grey);
   text-decoration: none;
   text-transform: uppercase;
-  font-family: 'Space Mono', ibm-plex-mono, Monaco, 'Lucida Console';
+  font-family: "Space Mono", ibm-plex-mono, Monaco, "Lucida Console";
   font-size: 14px;
   letter-spacing: -1px;
   border: 1px var(--dark-grey) solid;
@@ -576,7 +632,7 @@ hr:before {
 }
 
 footer {
-  font-family: 'Space Mono', ibm-plex-mono, Monaco, 'Lucida Console';
+  font-family: "Space Mono", ibm-plex-mono, Monaco, "Lucida Console";
   text-align: center;
   font-size: 13px;
   padding: 100px 0;
@@ -603,14 +659,14 @@ footer {
 }
 
 .author * {
-  font-family: 'Space Mono', ibm-plex-mono, Monaco, 'Lucida Console';
+  font-family: "Space Mono", ibm-plex-mono, Monaco, "Lucida Console";
   font-style: italic;
   display: flex;
   align-items: center;
 }
 
 .signature {
-  font-family: Montserrat !important;;
+  font-family: Montserrat !important;
   font-size: 21px;
   line-height: 1em;
   margin-top: 30px;
@@ -618,12 +674,13 @@ footer {
 }
 
 .sig-name {
-	margin-top: 26px;
-	float: right;
-	font-size: 2.1em;
+  margin-top: 26px;
+  float: right;
+  font-size: 2.1em;
 }
 
-.uses-intro, .about-intro {
+.uses-intro,
+.about-intro {
   font-family: Montserrat !important;
   font-size: 20px;
   line-height: 1.8em;
@@ -634,14 +691,15 @@ footer {
 .about-intro div {
   margin-top: 10px;
 }
-.uses-intro a, .about-intro a {
+.uses-intro a,
+.about-intro a {
   color: var(--text-color);
   text-decoration: none;
   border-bottom: 1px var(--text-color) dashed;
 }
 
 .about-intro h1 {
-  font-family: 'Space Mono', ibm-plex-mono, Monaco, 'Lucida Console';
+  font-family: "Space Mono", ibm-plex-mono, Monaco, "Lucida Console";
   font-weight: 700;
 }
 
@@ -654,7 +712,7 @@ footer {
 }
 
 .uses-list li.head {
-  font-family: 'Space Mono', ibm-plex-mono, Monaco, 'Lucida Console';
+  font-family: "Space Mono", ibm-plex-mono, Monaco, "Lucida Console";
   font-style: italic;
   font-weight: 600;
   font-size: 32px;
@@ -691,39 +749,39 @@ footer {
 }
 /* this is what makes the about icons invert! */
 .data-icon {
-	fill: var(--text-color);
+  fill: var(--text-color);
 }
 
 .data-icon path {
-	fill: var(--text-color) !important;
+  fill: var(--text-color) !important;
 }
 .data-icon img {
-	fill: var(--text-color);
-	padding: 30px;
-    font-size: 30px;
-    width: 50px;
-    text-align: center;
-    text-decoration: none;
-    margin: 20px 20px;
+  fill: var(--text-color);
+  padding: 30px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 20px 20px;
 }
 
 .stack-name {
-  font-family: 'Space Mono', ibm-plex-mono, Monaco, 'Lucida Console';
+  font-family: "Space Mono", ibm-plex-mono, Monaco, "Lucida Console";
   font-size: 13px;
   color: var(--text-color);
 }
 
 .setup-img {
-    position: relative;
-    align-items: center;
-    justify-content: center;
-    border-radius: 15px;
-    border: 1px solid;
-    border-color: var(--secondary-color);
-    min-width: 75%;
-    width: 50vw;
-    height: auto;
-  }
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+  border: 1px solid;
+  border-color: var(--secondary-color);
+  min-width: 75%;
+  width: 50vw;
+  height: auto;
+}
 .contact {
   font-family: Montserrat !important;
   font-size: 20px;
@@ -732,15 +790,13 @@ footer {
 }
 
 .contact a {
-	color: var(--text-color);
-	text-decoration: none;
-	border-bottom: 1px var(--text-color) dashed;
-
+  color: var(--text-color);
+  text-decoration: none;
+  border-bottom: 1px var(--text-color) dashed;
 }
 
 .contact a:hover {
-	color: var(--dark-grey);
-
+  color: var(--dark-grey);
 }
 /* Override scroll progress */
 .writing-progress > div {
@@ -749,33 +805,33 @@ footer {
 
 /* new post ! */
 .pulse {
-	background: var(--primary-color);
-	border-radius: 50%;
-	height: 10px;
-    width: 10px;
-    display: inline-block;
-    box-shadow: 0 0 0 0 var(--primary-color);
-	transform: scale(1.2);
-    animation: pulse 2s infinite;
-    margin: -5px 15px 0 0;
-    vertical-align: middle;
+  background: var(--primary-color);
+  border-radius: 50%;
+  height: 10px;
+  width: 10px;
+  display: inline-block;
+  box-shadow: 0 0 0 0 var(--primary-color);
+  transform: scale(1.2);
+  animation: pulse 2s infinite;
+  margin: -5px 15px 0 0;
+  vertical-align: middle;
 }
 
 @keyframes pulse {
-	0% {
-		transform: scale(0.95);
-		box-shadow: 0 0 0 0 var(--primary-color);
-	}
+  0% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 var(--primary-color);
+  }
 
-	70% {
-		transform: scale(1);
-		box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
-	}
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+  }
 
-	100% {
-		transform: scale(0.95);
-		box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
-	}
+  100% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  }
 }
 
 /*.theme-switch-button-mobile {
@@ -790,144 +846,152 @@ footer {
     left: 0;
     padding: 30px 0;
   }
-  }
+}
 
-  /*.theme-switch-button {
+/*.theme-switch-button {
     display: none;
   }*/
 
-  .back-button {
-    border: none;
-    background: none;
-    cursor: pointer;
-    cursor: hand;
-    color: var(--text-color);
-    outline: 0;
-    font-family: 'Space Mono', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 16px;
-    font-weight: 500;
-  }
+.back-button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  cursor: hand;
+  color: var(--text-color);
+  outline: 0;
+  font-family: "Space Mono", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+}
 
-  .theme-switch-button-mobile {
-    border: none;
-    background: none;
-    cursor: pointer;
-    cursor: hand;
-    color: var(--text-color);
-    outline: 0;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 16px;
-    font-weight: 500;
-  }
+.theme-switch-button-mobile {
+  border: none;
+  background: none;
+  cursor: pointer;
+  cursor: hand;
+  color: var(--text-color);
+  outline: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+}
 
-  .back-button, .theme-switch-button-mobile {
-    width: 50%;
-    left: 0;
-    padding: 0;
-    text-align: center;
-    position: fixed;
-    top: 20px;
-    z-index: 1;
-  }
+.back-button,
+.theme-switch-button-mobile {
+  width: 50%;
+  left: 0;
+  padding: 0;
+  text-align: center;
+  position: fixed;
+  top: 20px;
+  z-index: 1;
+}
 
-  .theme-switch-button-mobile {
-    display: none;
-    left: 50%;
-    text-transform: uppercase;
-  }
+.theme-switch-button-mobile {
+  display: none;
+  left: 50%;
+  text-transform: uppercase;
+}
 
-  .theme-switch-button-mobile svg {
-    vertical-align: middle;
-    margin: -5px 5px 0 0;
-  }
+.theme-switch-button-mobile svg {
+  vertical-align: middle;
+  margin: -5px 5px 0 0;
+}
 
-  .theme-switch-button-mobile * {
-    display: inline-flex;
-    align-items: center;
-  }
+.theme-switch-button-mobile * {
+  display: inline-flex;
+  align-items: center;
+}
 
-  .top-menu ul li a {
-    padding-left: 7px;
-    padding-right: 7px;
-  }
+.top-menu ul li a {
+  padding-left: 7px;
+  padding-right: 7px;
+}
 
-  .writing-row .writing-date {
-	font-family: 'Space Mono', ibm-plex-mono, Monaco, 'Lucida Console';
-    text-align: left;
-    padding: 10px 0;
-  }
+.writing-row .writing-date {
+  font-family: "Space Mono", ibm-plex-mono, Monaco, "Lucida Console";
+  text-align: left;
+  padding: 10px 0;
+}
 
-  .uses-list li:not(.head) span {
-    display: block;
-    margin-top: 10px;
-  }
+.uses-list li:not(.head) span {
+  display: block;
+  margin-top: 10px;
+}
 
-  .uses-list li:not(.head) {
-    padding-bottom: 25px;
-  }
+.uses-list li:not(.head) {
+  padding-bottom: 25px;
+}
 
-  .stack-name {
-    font-size: 10px;
-  }
+.stack-name {
+  font-size: 10px;
+}
 
-  .text-transition {
-    display: block !important;
-  }
+.text-transition {
+  display: block !important;
+}
 
-  .writing-row a {
-    margin-top: 0;
-  }
+.writing-row a {
+  margin-top: 0;
+}
 
-  .logo {
-    display: none;
-  }
+.logo {
+  display: none;
+}
 
-  .eff span {
-	font-family: 'Space Mono', ibm-plex-mono, Monaco, 'Lucida Console' !important;
-    display: block;
-    line-height: 1.9em;
-  }
+.eff span {
+  font-family: "Space Mono", ibm-plex-mono, Monaco, "Lucida Console" !important;
+  display: block;
+  line-height: 1.9em;
+}
 
-  .eff span:after, .eff span:before {
-	font-family: 'Space Mono', ibm-plex-mono, Monaco, 'Lucida Console';
-    height: 90px !important;
-    top: -1em !important;
-  }
+.eff span:after,
+.eff span:before {
+  font-family: "Space Mono", ibm-plex-mono, Monaco, "Lucida Console";
+  height: 90px !important;
+  top: -1em !important;
+}
 
-  .main-h1 {
-	font-family: 'Space Mono', ibm-plex-mono, Monaco, 'Lucida Console';
-	font-style: italic;
-	font-weight: bold;
-    font-size: calc(2vw + 2vh);
-  }
+.main-h1 {
+  font-family: "Space Mono", ibm-plex-mono, Monaco, "Lucida Console";
+  font-style: italic;
+  font-weight: bold;
+  font-size: calc(2vw + 2vh);
+}
 /* About me */
-  .about-h1 {
-	font-family: 'Space Mono', ibm-plex-mono, Monaco, 'Lucida Console';
-  	font-style: italic;
-  	font-weight: 800;
-  	font-size: calc(3vw + 3vh);
-  	text-align: center;
-  	margin: 50px 0 0px;
-  	letter-spacing: -.05em;
-  	line-height: 1em;
-  	background: linear-gradient(45deg, var(--primary-color) 32.5%, var(--secondary-color) 50.5%);
-  	-webkit-background-clip: text;
-  	-webkit-text-fill-color: transparent;
-	padding-bottom: 20px;
-	z-index: 1;
-  }
+.about-h1 {
+  font-family: "Space Mono", ibm-plex-mono, Monaco, "Lucida Console";
+  font-style: italic;
+  font-weight: 800;
+  font-size: calc(3vw + 3vh);
+  text-align: center;
+  margin: 50px 0 0px;
+  letter-spacing: -0.05em;
+  line-height: 1em;
+  background: linear-gradient(
+    45deg,
+    var(--primary-color) 32.5%,
+    var(--secondary-color) 50.5%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding-bottom: 20px;
+  z-index: 1;
+}
 
-  .about-h1 h1 {
-	  margin-bottom: 5px !important;
-  }
+.about-h1 h1 {
+  margin-bottom: 5px !important;
+}
 
-  .hope-liked {
-    text-align: center;
-  }
+.hope-liked {
+  text-align: center;
+}
 
-  .article-body {
-    padding: 0 15px;
-  }
+.article-body {
+  padding: 0 15px;
+}
 
 .pr-reviews-img {
   width: 50%;
@@ -941,7 +1005,7 @@ footer {
 .reviews-list {
   list-style: none;
   padding: 0;
-  font-family: 'Space Mono', ibm-plex-mono, Monaco, 'Lucida Console';
+  font-family: "Space Mono", ibm-plex-mono, Monaco, "Lucida Console";
   font-size: 16px;
 }
 
@@ -949,7 +1013,8 @@ footer {
   padding: 5px 0 25px;
 }
 
-.reviews-list a, .reviews-list .point {
+.reviews-list a,
+.reviews-list .point {
   color: var(--text-color);
   font-weight: 600;
   margin-right: 10px;
@@ -958,7 +1023,7 @@ footer {
 }
 
 .reviews-what-to-do {
-  font-family: 'Space Mono', ibm-plex-mono, Monaco, 'Lucida Console';
+  font-family: "Space Mono", ibm-plex-mono, Monaco, "Lucida Console";
   font-weight: 600;
   font-size: 32px;
   margin-bottom: 20px;
@@ -967,7 +1032,7 @@ footer {
 }
 
 .happy-coding {
-  font-family: 'Space Mono', ibm-plex-mono, Monaco, 'Lucida Console';
+  font-family: "Space Mono", ibm-plex-mono, Monaco, "Lucida Console";
   margin-top: 50px;
 }
 
@@ -976,7 +1041,7 @@ footer {
 }
 
 .happy-coding span:first-child {
-  font-family: 'Space Mono', ibm-plex-mono, Monaco, 'Lucida Console';
+  font-family: "Space Mono", ibm-plex-mono, Monaco, "Lucida Console";
   font-weight: 600;
 }
 
@@ -986,7 +1051,7 @@ footer {
 }
 
 .reading-time {
-  font-family: 'Space Mono', ibm-plex-mono, Monaco, 'Lucida Console';
+  font-family: "Space Mono", ibm-plex-mono, Monaco, "Lucida Console";
   font-size: 14px;
   margin: 20px 0 40px;
   color: var(--uses-secondary-color);
@@ -1000,23 +1065,23 @@ footer {
 }
 
 .eff {
-  font-family: 'Space Mono', ibm-plex-mono, Monaco, 'Lucida Console';
+  font-family: "Space Mono", ibm-plex-mono, Monaco, "Lucida Console";
   margin: 30px 25px 25px;
   text-align: center;
 }
 
 .eff span {
-  font-family: 'Space Mono', ibm-plex-mono, Monaco, 'Lucida Console';
+  font-family: "Space Mono", ibm-plex-mono, Monaco, "Lucida Console";
   padding: 4px 15px 6px;
   border-radius: 4px;
-  font-family: 'Space Mono';
+  font-family: "Space Mono";
   font-style: italic;
-  letter-spacing: -.5px;
+  letter-spacing: -0.5px;
   font-size: 18px;
   color: var(--text-color);
 }
 
 .eff a {
-  font-family: 'Space Mono', ibm-plex-mono, Monaco, 'Lucida Console';
+  font-family: "Space Mono", ibm-plex-mono, Monaco, "Lucida Console";
   color: var(--primary-color);
 }
