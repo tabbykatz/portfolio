@@ -31,4 +31,51 @@ Chapters read: [An Introduction](https://javascript.info/getting-started), [Java
 - Operators return a value 🤯
 - `++prefix` returns the new value and `postfix++` returns the old value. This makes sense but I had not thought much about it wrt Js.
 
+### 8/29 More basics
+
+Chapters read: [Code quality](https://javascript.info/code-quality), [Objects: the basics](https://javascript.info/object-basics)
+
+- `!!` converts a value to Boolean
+- `??` the nullish coalescing operator 🥰 returns first non-null non-undefined value as in:
+  `this.username = username ?? "guest"; // ?? > ||`
+- labels for `break` or `continue` seriously why have these not been mentioned in any of the books I have read
+- property value shorthand. I feel like I may have known this but I forgot until now:
+
+```js
+function makeUser(name, age) {
+  return {
+    name, // same as name: name
+    age, // same as age: age
+    // ...
+  };
+}
+```
+
+- `in` for property existence test as in:
+  `if ("key" in object) // => true, false`
+- Q: Are object keys ordered? A: Integer-ish property keys are sorted, others appear in creation order.
+- `Object.assign === {...obj}`
+- JavaScript garbage collection aka 'mark and sweep'
+- Optional chaining. Where have you been all my life?
+
+```js
+user?.address?.street; // to return undefined instead of error
+user.method?.(); // won't call the method if not exists
+delete user?.name; // delete user.name if user exists
+```
+
+- writing our own object conversion rules like `__repr__` as in:
+
+```js
+obj[Symbol.toPrimitive] = function(hint)
+// or
+obj.toString()
+obj.valueOf()
+```
+
+- We use 'methods' for strings, numbers, etc but these are not objects. A wrapper object is created, used and destroyed when we call the method. Here's the part I didn't know- this is exactly what we are doing when we convert type as in `Number("1")`.
+- `let billion = 1e9; // 1 billion, literally: 1 and 9 zeroes` Wow, that's a time-saver. Also, `0.000001 === 1e-6`
+- Use two dots to call a method directly on a numeric value as in:
+  `(123456).toString(36);`
+
 ### More chapters to come
