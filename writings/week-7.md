@@ -19,7 +19,7 @@ What made it so rough? 12 hour days, my kids returning and adjusting to school, 
 
 ## Work
 
-I don't have a lot to show for myself this week. I build two different sample React 'apps', both of which are sparse lessons and nothing fancy.
+I don't have a lot to show for myself this week. I built two different sample React 'apps', both of which are sparse lessons and nothing fancy.
 
 - [Todo List to learn about callbacks in children](https://github.com/tabbykatz/SimpleToDo)
 - ['SWeather to learn about state](https://github.com/tabbykatz/-Sweather)
