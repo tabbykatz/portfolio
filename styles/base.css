@@ -3,8 +3,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat");
 :root {
   /* not-quite white is easier on the eyes */
-  --primary-color: #bc6c25;
-  --secondary-color: #dda15e;
+  --primary-color: #79b791;
+  --prev-prime: #bc6c25;
+  --secondary-color: #abd1b5;
+  --prev-sec: #dda15e;
   --dark-grey: #666;
   --text-color: #000;
   --background-color: #fdfdfd;
