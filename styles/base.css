@@ -1,19 +1,6 @@
 @import url("https://use.typekit.net/cyw3eir.css");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat");
-@font-face {
-  font-family: "Dank Mono Regular";
-  font-style: normal;
-  font-weight: normal;
-  src: local("Dank Mono Regular"),
-    url("%PUBLIC_URL%/static/dankmono-regular-webfont.woff") format("woff");
-}
-@font-face {
-  font-family: "Dank Mono Italic";
-  font-style: italic;
-  font-weight: normal;
-  src: local("Dank Mono Italic"),
-    url("%PUBLIC_URL%/static/dankmono-italic-webfont.woff") format("woff");
-}
+
 :root {
   /* not-quite white is easier on the eyes */
   --primary-color: #79b791;
@@ -26,8 +13,8 @@
   --hr-color: #ddd;
   --article-text-color: #444;
   --uses-secondary-color: #bbb;
-  --dank-reg: "Dank Mono Regular";
-  --dank-ita: "Dank Mono Italic";
+  --dank-reg: "dm";
+  --dank-ita: "dm";
 }
 
 [data-theme="dark"] {
@@ -420,7 +407,7 @@ h6 {
 /* end blur-in */
 
 .blog-title {
-  font-family: var(--dank-ita), ibm-plex-mono, Monaco, "Lucida Console";
+  font-family: "dm";
   font-style: italic;
   font-weight: 800;
   font-size: calc(3vw + 3vh);
@@ -650,6 +637,7 @@ hr:before {
 
 footer {
   font-family: var(--dank-ita), ibm-plex-mono, Monaco, "Lucida Console";
+  font-style: italic;
   text-align: center;
   font-size: 13px;
   padding: 100px 0;
@@ -745,6 +733,7 @@ footer {
 
 .uses-list li:not(.head):before {
   font-family: var(--dank-ita);
+  font-style: italic;
   content: "=>";
   color: var(--uses-secondary-color);
   padding-right: 10px;
@@ -961,6 +950,7 @@ footer {
 
 .eff span {
   font-family: var(--dank-ita), ibm-plex-mono, Monaco, "Lucida Console" !important;
+  font-style: italic;
   display: block;
   line-height: 1.9em;
 }
@@ -968,6 +958,7 @@ footer {
 .eff span:after,
 .eff span:before {
   font-family: var(--dank-ita), ibm-plex-mono, Monaco, "Lucida Console";
+  font-style: italic;
   height: 90px !important;
   top: -1em !important;
 }
@@ -1084,6 +1075,7 @@ footer {
 
 .eff {
   font-family: var(--dank-ita), ibm-plex-mono, Monaco, "Lucida Console";
+  font-style: italic;
   margin: 30px 25px 25px;
   text-align: center;
 }
@@ -1101,5 +1093,6 @@ footer {
 
 .eff a {
   font-family: var(--dank-ita), ibm-plex-mono, Monaco, "Lucida Console";
+  font-style: italic;
   color: var(--primary-color);
 }
