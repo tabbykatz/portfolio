@@ -157,99 +157,6 @@ blockquote.twitter-tweet a:focus {
   display: block;
 }
 
-/* about me picture fun */
-.space {
-  margin: 20px 20px 20px 20px;
-  height: 20px;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-.pic-container {
-  height: 55vmin;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-}
-
-.pic-box {
-  width: 50vmin;
-  height: 50vmin;
-  /*border: 1px dashed rgba(255,255,255,0.4);*/
-  position: relative;
-}
-
-.pic-box::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  border-radius: 50%;
-  /* border: 1px dashed rgba(255,255,255,0.4);*/
-  transform: scale(1.42);
-}
-
-.pic-spin-container {
-  width: 95%;
-  height: 95%;
-  animation: spin 12s linear infinite;
-  position: relative;
-}
-
-.pic-shape {
-  width: 100%;
-  height: 100%;
-  transition: border-radius 1s ease-out;
-  border-radius: 60% 40% 30% 70% / 60% 70% 30% 40%;
-  animation: morph 8s ease-in-out infinite both alternate;
-  position: relative;
-  overflow: hidden;
-  z-index: 5;
-}
-.pic-bd {
-  width: 142%;
-  height: 142%;
-  position: absolute;
-  left: -21%;
-  top: -21%;
-  background-image: url("/avatar.jpg");
-  /*background: url(https://ibb.co/MM0HjkQ);*/
-  background-size: 100%;
-  background-position: center center;
-  display: flex;
-  color: #003;
-  font-size: 5vw;
-  font-weight: bold;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  text-transform: uppercase;
-  animation: spin 12s linear infinite reverse;
-  opacity: 1;
-  z-index: 2;
-}
-
-@keyframes morph {
-  0% {
-    border-radius: 40% 60% 60% 40% / 60% 30% 70% 40%;
-  }
-  100% {
-    border-radius: 40% 60%;
-  }
-}
-
-@keyframes spin {
-  to {
-    transform: rotate(1turn);
-  }
-}
-/* end fun */
-
 /* kitten icon */
 .kitten {
   height: 3em;
@@ -409,11 +316,11 @@ h6 {
 .blog-title {
   font-family: "dm";
   font-style: italic;
-  font-weight: 800;
+  font-weight: 900;
   font-size: calc(3vw + 3vh);
   text-align: center;
   margin: 100px 0 0;
-  letter-spacing: -0.05rem;
+  letter-spacing: -0.15rem;
   line-height: 1em;
   background: linear-gradient(
     45deg,
