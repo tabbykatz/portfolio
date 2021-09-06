@@ -11,7 +11,7 @@ const preStyle = {
 
 const codeProps = {
   style: {
-    fontFamily: `'Space Mono', 'ibm-plex-mono'`,
+    fontFamily: `'Dank Mono Regular', 'ibm-plex-mono'`,
     fontSize: "18.5px",
   },
 };

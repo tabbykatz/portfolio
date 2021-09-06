@@ -1,6 +1,19 @@
 @import url("https://use.typekit.net/cyw3eir.css");
-@import url("https://fonts.googleapis.com/css2?family=Space Mono");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat");
+@font-face {
+  font-family: "Dank Mono Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Dank Mono Regular"),
+    url("%PUBLIC_URL%/static/dankmono-regular-webfont.woff") format("woff");
+}
+@font-face {
+  font-family: "Dank Mono Italic";
+  font-style: italic;
+  font-weight: normal;
+  src: local("Dank Mono Italic"),
+    url("%PUBLIC_URL%/static/dankmono-italic-webfont.woff") format("woff");
+}
 :root {
   /* not-quite white is easier on the eyes */
   --primary-color: #79b791;
@@ -13,6 +26,8 @@
   --hr-color: #ddd;
   --article-text-color: #444;
   --uses-secondary-color: #bbb;
+  --dank-reg: "Dank Mono Regular";
+  --dank-ita: "Dank Mono Italic";
 }
 
 [data-theme="dark"] {
@@ -31,12 +46,12 @@
 }
 
 html {
-  font-family: "Space Mono", -apple-system, BlinkMacSystemFont, "Segoe UI",
+  font-family: var(--dank-reg), -apple-system, BlinkMacSystemFont, "Segoe UI",
     Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 body {
-  font-family: "Space Mono", ibm-plex-mono, Monaco, "Lucida Console";
+  font-family: var(--dank-reg), ibm-plex-mono, Monaco, "Lucida Console";
   background-color: var(--background-color);
   color: var(--text-color);
   margin: 0;
@@ -145,7 +160,7 @@ blockquote.twitter-tweet a:focus {
 }
 
 .tooltip-content p {
-  font-family: "Space Mono", ibm-plex-mono, Monaco, "Lucida Console";
+  font-family: var(--dank-reg), ibm-plex-mono, Monaco, "Lucida Console";
   color: #000 !important;
   font-weight: bold;
   font-style: italic;
@@ -272,7 +287,7 @@ blockquote.twitter-tweet a:focus {
   border-radius: 10px;
   letter-spacing: -0.5px;
   font-weight: 500;
-  font-family: "Space Mono", ibm-plex-mono, Monaco, "Lucida Console" !important;
+  font-family: var(--dank-reg), ibm-plex-mono, Monaco, "Lucida Console" !important;
   transition: all 0.2s linear;
 }
 
@@ -303,7 +318,7 @@ blockquote.twitter-tweet a:focus {
 }
 
 .amp {
-  font-family: "Space Mono", Baskerville, "Goudy Old Style", Palatino,
+  font-family: var(--dank-ita), Baskerville, "Goudy Old Style", Palatino,
     "Book Antiqua", serif;
   font-style: italic;
   font-weight: normal;
@@ -315,7 +330,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Space Mono", ibm-plex-mono, Monaco, "Lucida Console";
+  font-family: var(--dank-reg), ibm-plex-mono, Monaco, "Lucida Console";
   font-style: italic;
   font-weight: bold;
   color: var(--text-color);
@@ -323,7 +338,7 @@ h6 {
 }
 
 .landing h1 {
-  font-family: "Space Mono", ibm-plex-mono, Monaco, "Lucida Console";
+  font-family: var(--dank-reg), ibm-plex-mono, Monaco, "Lucida Console";
   font-style: italic;
   font-weight: bold;
   color: var(--primary-color);
@@ -405,7 +420,7 @@ h6 {
 /* end blur-in */
 
 .blog-title {
-  font-family: "Space Mono", ibm-plex-mono, Monaco, "Lucida Console";
+  font-family: var(--dank-ita), ibm-plex-mono, Monaco, "Lucida Console";
   font-style: italic;
   font-weight: 800;
   font-size: calc(3vw + 3vh);
@@ -424,7 +439,7 @@ h6 {
 }
 
 .entry-description {
-  font-family: "Space Mono", ibm-plex-mono, Monaco, "Lucida Console";
+  font-family: var(--dank-reg), ibm-plex-mono, Monaco, "Lucida Console";
   margin-bottom: 50px;
   font-size: 22px;
   color: var(--dark-grey);
@@ -451,14 +466,14 @@ h6 {
 }
 
 .writing-row .writing-date {
-  font-family: "Space Mono", ibm-plex-mono, Monaco, "Lucida Console";
+  font-family: var(--dank-reg), ibm-plex-mono, Monaco, "Lucida Console";
   padding-right: 20px;
   font-size: 14px;
   color: var(--uses-secondary-color);
 }
 
 .writing-row .writing-title {
-  font-family: "Space Mono", ibm-plex-mono, Monaco, "Lucida Console";
+  font-family: var(--dank-reg), ibm-plex-mono, Monaco, "Lucida Console";
   font-style: italic;
   font-weight: 600;
   font-size: 20px;
@@ -466,7 +481,7 @@ h6 {
 }
 /* the big title of the blog on the blog page */
 .main-h1 {
-  font-family: "Space Mono", ibm-plex-mono, Monaco, "Lucida Console";
+  font-family: var(--dank-reg), ibm-plex-mono, Monaco, "Lucida Console";
   font-weight: 800;
   font-size: calc(3vw + 3vh);
   letter-spacing: -0.05rem;
@@ -488,7 +503,7 @@ h6 {
 .writing-container h4,
 .writing-container h5,
 .writing-container h6 {
-  font-family: "Space Mono", ibm-plex-mono, Monaco, "Lucida Console";
+  font-family: var(--dank-reg), ibm-plex-mono, Monaco, "Lucida Console";
   letter-spacing: -1px;
 }
 
@@ -559,7 +574,7 @@ h6 {
 }
 
 .writing-container *:not(pre) > code {
-  font-family: "Space Mono", ibm-plex-mono, Monaco, "Lucida Console";
+  font-family: var(--dank-reg), ibm-plex-mono, Monaco, "Lucida Console";
   border: none;
   /* 1px var(--primary-color) dashed; */
   color: var(--primary-color);
@@ -571,7 +586,7 @@ h6 {
 }
 
 hr {
-  font-family: "Space Mono", ibm-plex-mono, Monaco, "Lucida Console";
+  font-family: var(--dank-reg), ibm-plex-mono, Monaco, "Lucida Console";
   border: none;
   width: 100%;
   text-align: center;
@@ -596,7 +611,7 @@ hr:before {
   color: var(--dark-grey);
   text-decoration: none;
   text-transform: uppercase;
-  font-family: "Space Mono", ibm-plex-mono, Monaco, "Lucida Console";
+  font-family: var(--dank-reg), ibm-plex-mono, Monaco, "Lucida Console";
   font-size: 14px;
   letter-spacing: -1px;
   border: 1px var(--dark-grey) solid;
@@ -634,7 +649,7 @@ hr:before {
 }
 
 footer {
-  font-family: "Space Mono", ibm-plex-mono, Monaco, "Lucida Console";
+  font-family: var(--dank-ita), ibm-plex-mono, Monaco, "Lucida Console";
   text-align: center;
   font-size: 13px;
   padding: 100px 0;
@@ -661,7 +676,7 @@ footer {
 }
 
 .author * {
-  font-family: "Space Mono", ibm-plex-mono, Monaco, "Lucida Console";
+  font-family: var(--dank-reg), ibm-plex-mono, Monaco, "Lucida Console";
   font-style: italic;
   display: flex;
   align-items: center;
@@ -701,7 +716,7 @@ footer {
 }
 
 .about-intro h1 {
-  font-family: "Space Mono", ibm-plex-mono, Monaco, "Lucida Console";
+  font-family: var(--dank-reg), ibm-plex-mono, Monaco, "Lucida Console";
   font-weight: 700;
 }
 
@@ -714,7 +729,7 @@ footer {
 }
 
 .uses-list li.head {
-  font-family: "Space Mono", ibm-plex-mono, Monaco, "Lucida Console";
+  font-family: var(--dank-ita), ibm-plex-mono, Monaco, "Lucida Console";
   font-style: italic;
   font-weight: 600;
   font-size: 32px;
@@ -729,7 +744,8 @@ footer {
 }
 
 .uses-list li:not(.head):before {
-  content: "->";
+  font-family: var(--dank-ita);
+  content: "=>";
   color: var(--uses-secondary-color);
   padding-right: 10px;
 }
@@ -768,7 +784,7 @@ footer {
 }
 
 .stack-name {
-  font-family: "Space Mono", ibm-plex-mono, Monaco, "Lucida Console";
+  font-family: var(--dank-reg), ibm-plex-mono, Monaco, "Lucida Console";
   font-size: 13px;
   color: var(--text-color);
 }
@@ -861,7 +877,7 @@ footer {
   cursor: hand;
   color: var(--text-color);
   outline: 0;
-  font-family: "Space Mono", -apple-system, BlinkMacSystemFont, "Segoe UI",
+  font-family: var(--dank-reg), -apple-system, BlinkMacSystemFont, "Segoe UI",
     Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 16px;
   font-weight: 500;
@@ -913,7 +929,7 @@ footer {
 }
 
 .writing-row .writing-date {
-  font-family: "Space Mono", ibm-plex-mono, Monaco, "Lucida Console";
+  font-family: var(--dank-reg), ibm-plex-mono, Monaco, "Lucida Console";
   text-align: left;
   padding: 10px 0;
 }
@@ -944,27 +960,27 @@ footer {
 }
 
 .eff span {
-  font-family: "Space Mono", ibm-plex-mono, Monaco, "Lucida Console" !important;
+  font-family: var(--dank-ita), ibm-plex-mono, Monaco, "Lucida Console" !important;
   display: block;
   line-height: 1.9em;
 }
 
 .eff span:after,
 .eff span:before {
-  font-family: "Space Mono", ibm-plex-mono, Monaco, "Lucida Console";
+  font-family: var(--dank-ita), ibm-plex-mono, Monaco, "Lucida Console";
   height: 90px !important;
   top: -1em !important;
 }
 
 .main-h1 {
-  font-family: "Space Mono", ibm-plex-mono, Monaco, "Lucida Console";
+  font-family: var(--dank-reg), ibm-plex-mono, Monaco, "Lucida Console";
   font-style: italic;
   font-weight: bold;
   font-size: calc(2vw + 2vh);
 }
 /* About me */
 .about-h1 {
-  font-family: "Space Mono", ibm-plex-mono, Monaco, "Lucida Console";
+  font-family: var(--dank-reg), ibm-plex-mono, Monaco, "Lucida Console";
   font-style: italic;
   font-weight: 800;
   font-size: calc(3vw + 3vh);
@@ -1007,7 +1023,7 @@ footer {
 .reviews-list {
   list-style: none;
   padding: 0;
-  font-family: "Space Mono", ibm-plex-mono, Monaco, "Lucida Console";
+  font-family: var(--dank-reg), ibm-plex-mono, Monaco, "Lucida Console";
   font-size: 16px;
 }
 
@@ -1025,7 +1041,7 @@ footer {
 }
 
 .reviews-what-to-do {
-  font-family: "Space Mono", ibm-plex-mono, Monaco, "Lucida Console";
+  font-family: var(--dank-reg), ibm-plex-mono, Monaco, "Lucida Console";
   font-weight: 600;
   font-size: 32px;
   margin-bottom: 20px;
@@ -1034,7 +1050,7 @@ footer {
 }
 
 .happy-coding {
-  font-family: "Space Mono", ibm-plex-mono, Monaco, "Lucida Console";
+  font-family: var(--dank-reg), ibm-plex-mono, Monaco, "Lucida Console";
   margin-top: 50px;
 }
 
@@ -1043,7 +1059,7 @@ footer {
 }
 
 .happy-coding span:first-child {
-  font-family: "Space Mono", ibm-plex-mono, Monaco, "Lucida Console";
+  font-family: var(--dank-reg), ibm-plex-mono, Monaco, "Lucida Console";
   font-weight: 600;
 }
 
@@ -1053,7 +1069,7 @@ footer {
 }
 
 .reading-time {
-  font-family: "Space Mono", ibm-plex-mono, Monaco, "Lucida Console";
+  font-family: var(--dank-reg), ibm-plex-mono, Monaco, "Lucida Console";
   font-size: 14px;
   margin: 20px 0 40px;
   color: var(--uses-secondary-color);
@@ -1067,16 +1083,16 @@ footer {
 }
 
 .eff {
-  font-family: "Space Mono", ibm-plex-mono, Monaco, "Lucida Console";
+  font-family: var(--dank-ita), ibm-plex-mono, Monaco, "Lucida Console";
   margin: 30px 25px 25px;
   text-align: center;
 }
 
 .eff span {
-  font-family: "Space Mono", ibm-plex-mono, Monaco, "Lucida Console";
+  font-family: var(--dank-ita), ibm-plex-mono, Monaco, "Lucida Console";
   padding: 4px 15px 6px;
   border-radius: 4px;
-  font-family: "Space Mono";
+  font-family: var(--dank-reg);
   font-style: italic;
   letter-spacing: -0.5px;
   font-size: 18px;
@@ -1084,6 +1100,6 @@ footer {
 }
 
 .eff a {
-  font-family: "Space Mono", ibm-plex-mono, Monaco, "Lucida Console";
+  font-family: var(--dank-ita), ibm-plex-mono, Monaco, "Lucida Console";
   color: var(--primary-color);
 }
