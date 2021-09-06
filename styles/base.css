@@ -586,6 +586,8 @@ footer {
 }
 
 .sig-name {
+  font-family: var(--dank-ita);
+  font-style: italic;
   margin-top: 26px;
   float: right;
   font-size: 2.1em;

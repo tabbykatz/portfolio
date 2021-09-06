@@ -78,4 +78,52 @@ obj.valueOf()
 - Use two dots to call a method directly on a numeric value as in:
   `(123456).toString(36);`
 
+### 9/06
+
+Chapters read: [Data types](https://javascript.info/data-types), [Advanced Working with functions](https://javascript.info/advanced-functions)
+
+- Maps exist in js and let me tell you, they're pretty great.
+- make a map from any obj like `let map = new Map(Object.entries(obj))`
+- change your mind? `Object.fromEntries(map)`
+- why would you ever use thi--- oh, wait:
+
+```js
+Object.fromEntries(Object.entries(obj).map(entry=> [entry[0]/*key*/, entry[1] * 2 /*double the val*/
+```
+
+- what if I told you:
+
+```js
+let [name, , , favoriteLanguage] = ["Tabitha", "C", "Python", "Javascript"];
+console.log(
+  `My name is ${name} and my new favorite language is ${favoriteLanguage}.`
+);
+// My name is Tabitha and my new favorite language is Javascript.
+```
+
+- the classic swap: `[guest, admin] = [admin, guest]`
+- kinda miffed I was taught (recently, in fact) to use the `arguments` object to write a function that takes variable args, when I could have been using `func(...args)` It makes a real difference: `...args` is an array!
+
+```js
+function regFunc(...args) {
+  console.log(arguments);
+  return args;
+}
+
+console.log(regFunc(1, 2, 3));
+
+//{0: 1, 1: 2, 2: 3}
+//(3) [1, 2, 3]
+
+const arrowFunc = (...args) => {
+  return args;
+};
+
+console.log(arrowFunc(1, 2, 3));
+// (3) [1, 2, 3]
+// 0: 1
+// 1: 2
+// 2: 3
+```
+
 ### More chapters to come
