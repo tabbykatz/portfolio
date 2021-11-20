@@ -407,6 +407,8 @@ h6 {
   margin-right: auto;
   width: 100%;
   height: auto;
+  border-radius: 7px;
+  margin-bottom: 15px;
 }
 
 .writing-container ul {
