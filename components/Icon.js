@@ -1,12 +1,9 @@
-import React from "react";
+import * as React from "react";
 
-//TODO: react-simple-icons instead
 import simpleIcons from "simple-icons";
-import Layout from "../components/Layout";
 
-const Icon = ({ type, style }) => {
+const Icon = ({ type }) => {
   const icon = simpleIcons.get(type);
-  const theme = Layout.theme;
 
   return (
     <div
@@ -16,7 +13,6 @@ const Icon = ({ type, style }) => {
         display: "inline-block",
         width: "50px",
         margin: "0 auto",
-        ...style,
       }}
       dangerouslySetInnerHTML={{ __html: icon.svg }}
     />
