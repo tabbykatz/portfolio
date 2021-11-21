@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from "react";
+import * as React from "react";
 import { Grid, Row, Col } from "react-flexbox-grid";
-import { Zap } from "react-feather";
+import { Sun, Moon } from "react-feather";
 import Link from "next/link";
 import { useRouter } from "next/router";
 
@@ -12,44 +12,18 @@ const whiteLogo = "/whitelogo.png";
 const menu = [
   {
     path: "/",
-    name: "0: home",
+    name: "0: blog",
   },
   {
     path: "/about",
     name: "1: about",
   },
   {
-    path: "/contact",
-    name: "2: contact",
-  },
-  {
     path: "/portfolio",
-    name: "3: portfolio",
-  },
-  {
-    path: "/setup",
-    name: "4: setup",
+    name: "2: portfolio",
   },
 ];
-const landingMenu = [
-  {
-    path: "/",
-    name: "0: see the project",
-  },
-  {
-    path: "/landing/#features",
-    name: "1: features",
-  },
-  {
-    path: "/landing/#about",
-    name: "2: about Tabitha",
-  },
-  {
-    path: "/landing/#shout",
-    name: "3: Shoutouts!",
-  },
-];
-const SHORTCUTS = ["Digit0", "Digit1", "Digit2", "Digit3", "Digit4"];
+const SHORTCUTS = ["Digit0", "Digit1", "Digit2"];
 const QUOTES = [
   `There are 10 types of people in this world, those who understand binary and those who don't.`,
   "First, solve the problem. Then, write the code. - John Johnson",
@@ -78,25 +52,18 @@ const PROJECTS = [
   `When I make new things, I add them here. Have a look!`,
   `A collection of things I've built.`,
 ];
-const LANDING = [
-  `Welcome to the landing page for my first React build!`,
-  `A portfolio site with hybrid static & server rendering.`,
-  `A Next.js and React driven showcase for my work as an engineer.`,
-  `A portfolio, a blog engine, and professional web presence: unlocked!`,
-];
-function Layout({ children, isHomepage, secondaryPage, portfolio, Landing }) {
+function Layout({ children, isHomepage, secondaryPage, portfolio }) {
   const router = useRouter();
   const onLoadTheme =
     typeof localStorage !== "undefined" && localStorage.getItem("BLOG_THEME");
-  const [theme, setTheme] = useState(onLoadTheme);
-  const [mounted, setMounted] = useState(false);
+  const [theme, setTheme] = React.useState(onLoadTheme);
+  const [mounted, setMounted] = React.useState(false);
   // randomized quotes on load
-  const [quote] = useState(QUOTES[Math.floor(Math.random() * QUOTES.length)]);
-  // random intro to projects
-  const [landingIntro] = useState(
-    LANDING[Math.floor(Math.random() * LANDING.length)]
+  const [quote] = React.useState(
+    QUOTES[Math.floor(Math.random() * QUOTES.length)]
   );
-  const [projectIntro] = useState(
+  // random intro to projects
+  const [projectIntro] = React.useState(
     PROJECTS[Math.floor(Math.random() * PROJECTS.length)]
   );
 
@@ -118,7 +85,7 @@ function Layout({ children, isHomepage, secondaryPage, portfolio, Landing }) {
     }
   }
   //to use key shortcuts to navigate
-  useEffect(() => {
+  React.useEffect(() => {
     document.addEventListener("keypress", triggerShortcut);
 
     if (onLoadTheme) return;
@@ -128,7 +95,7 @@ function Layout({ children, isHomepage, secondaryPage, portfolio, Landing }) {
     }
   }, []);
 
-  useEffect(() => {
+  React.useEffect(() => {
     document.documentElement.setAttribute("data-theme", theme);
 
     localStorage.setItem("BLOG_THEME", theme);
@@ -139,188 +106,99 @@ function Layout({ children, isHomepage, secondaryPage, portfolio, Landing }) {
   const containerProps = {
     ...(isHomepage || (portfolio && { md: 12 })),
     ...(secondaryPage && { md: 12 }),
-    ...(Landing && { md: 12 }),
   };
 
   if (!mounted) return <div />;
 
-  if (!Landing)
-    return (
-      <>
-        <ElectronicFrontier />
-        <div className="top-menu">
-          <Row>
-            <Col xs={10}>
-              <ul>
-                <li className="logo">
-                  <Link href="/" as="/">
-                    <a>
-                      {theme === "dark" ? (
-                        <img src={whiteLogo} />
-                      ) : (
-                        <img src={blackLogo} />
-                      )}
-                    </a>
+  return (
+    <>
+      <ElectronicFrontier />
+      <div className="top-menu">
+        <Row>
+          <Col xs={10}>
+            <ul>
+              <li className="logo">
+                <Link href="/" as="/">
+                  <a>
+                    {theme === "dark" ? (
+                      <img src={whiteLogo} />
+                    ) : (
+                      <img src={blackLogo} />
+                    )}
+                  </a>
+                </Link>
+              </li>
+
+              {menu.map(({ path, name }) => (
+                <li key={name}>
+                  <Link href={path} as={path}>
+                    <a>{name}</a>
                   </Link>
                 </li>
+              ))}
+            </ul>
+          </Col>
 
-                {menu.map(({ path, name }) => (
-                  <li key={name}>
-                    <Link href={path} as={path}>
-                      <a>{name}</a>
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </Col>
+          <Col xs={2} style={{ textAlign: "right" }}>
+            <button
+              className="theme-switch-button"
+              onClick={() => switchTheme()}
+            >
+              {theme === "dark" ? <Sun /> : <Moon />}
+            </button>
+          </Col>
+        </Row>
+      </div>
 
-            <Col xs={2} style={{ textAlign: "right" }}>
-              <button
-                className="theme-switch-button"
-                onClick={() => switchTheme()}
-              >
-                {theme === "dark" ? <Zap /> : <Zap />}
-              </button>
-            </Col>
-          </Row>
-        </div>
+      <Grid>
+        <Row>
+          <Col {...containerProps}>
+            {!secondaryPage && (
+              <div style={{ textAlign: "center" }}>
+                <h1 className="blog-title text-focus-in">
+                  {!secondaryPage && !portfolio ? quote : projectIntro}
+                </h1>
 
-        <Grid>
-          <Row>
-            <Col {...containerProps}>
-              {!secondaryPage && (
-                <div style={{ textAlign: "center" }}>
-                  <h1 className="blog-title text-focus-in">
-                    {!secondaryPage && !portfolio ? quote : projectIntro}
-                  </h1>
+                <p className="entry-description"></p>
+              </div>
+            )}
 
-                  <p className="entry-description"></p>
-                </div>
-              )}
+            {children}
 
-              {children}
+            {secondaryPage && (
+              <div className="bottom-mobile-nav">
+                <Row>
+                  <Col xs={6} />
 
-              {secondaryPage && (
-                <div className="bottom-mobile-nav">
-                  <Row>
-                    <Col xs={6} />
-
-                    <Col xs={6}>
-                      <button
-                        className="theme-switch-button-mobile"
-                        onClick={() => switchTheme()}
-                      >
-                        {theme === "dark" ? (
-                          <>
-                            <Zap /> Light
-                          </>
-                        ) : (
-                          <>
-                            <Zap /> Dark
-                          </>
-                        )}
-                      </button>
-                    </Col>
-                  </Row>
-                </div>
-              )}
-            </Col>
-          </Row>
-        </Grid>
-
-        <footer>
-          <div>Happy {currentDayName()}!</div>
-          <div>&copy; {new Date().getFullYear()} tabbykatz</div>
-        </footer>
-      </>
-    );
-
-  if (Landing)
-    return (
-      <>
-        <ElectronicFrontier />
-        <div className="top-menu">
-          <Row>
-            <Col xs={10}>
-              <ul>
-                <li className="logo">
-                  <Link href="/landing" as="/landing">
-                    <a>
+                  <Col xs={6}>
+                    <button
+                      className="theme-switch-button-mobile"
+                      onClick={() => switchTheme()}
+                    >
                       {theme === "dark" ? (
-                        <img src={whiteLogo} />
+                        <>
+                          <Sun /> Light
+                        </>
                       ) : (
-                        <img src={blackLogo} />
+                        <>
+                          <Moon /> Dark
+                        </>
                       )}
-                    </a>
-                  </Link>
-                </li>
+                    </button>
+                  </Col>
+                </Row>
+              </div>
+            )}
+          </Col>
+        </Row>
+      </Grid>
 
-                {landingMenu.map(({ path, name }) => (
-                  <li key={name}>
-                    <Link href={path} as={path}>
-                      <a>{name}</a>
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </Col>
-
-            <Col xs={2} style={{ textAlign: "right" }}>
-              <button
-                className="theme-switch-button"
-                onClick={() => switchTheme()}
-              >
-                {theme === "dark" ? <Zap /> : <Zap />}
-              </button>
-            </Col>
-          </Row>
-        </div>
-
-        <Grid>
-          <Row>
-            <Col {...containerProps}>
-              {!secondaryPage && (
-                <div style={{ textAlign: "center" }}>
-                  <h1 className="blog-title text-focus-in">{landingIntro}</h1>
-                </div>
-              )}
-
-              {children}
-
-              {secondaryPage && (
-                <div className="bottom-mobile-nav">
-                  <Row>
-                    <Col xs={6} />
-
-                    <Col xs={6}>
-                      <button
-                        className="theme-switch-button-mobile"
-                        onClick={() => switchTheme()}
-                      >
-                        {theme === "dark" ? (
-                          <>
-                            <Zap /> Light
-                          </>
-                        ) : (
-                          <>
-                            <Zap /> Dark
-                          </>
-                        )}
-                      </button>
-                    </Col>
-                  </Row>
-                </div>
-              )}
-            </Col>
-          </Row>
-        </Grid>
-
-        <footer>
-          <div>Happy {currentDayName()}!</div>
-          <div>&copy; {new Date().getFullYear()} tabbykatz</div>
-        </footer>
-      </>
-    );
+      <footer>
+        <div>Happy {currentDayName()}!</div>
+        <div>&copy; {new Date().getFullYear()} tabbykatz</div>
+      </footer>
+    </>
+  );
 }
 
 export default Layout;

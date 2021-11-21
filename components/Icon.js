@@ -3,7 +3,6 @@ import * as React from "react";
 import simpleIcons from "simple-icons";
 const Icon = ({ type }) => {
   const icon = simpleIcons.Get(type);
-  console.log({ icon });
 
   return (
     <>
