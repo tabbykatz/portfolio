@@ -6,6 +6,12 @@ import Icon from "../components/Icon";
 import { PRESENT } from "../constants/Stack";
 
 const About = () => {
+  const tldr = {
+    Proficient: ["Bash", "C", "Python", "JavaScript", "SQL"],
+    Current_focus: ["React", "CSS", "HTML", "Express", "Node.js", "PostgreSQL"],
+    Familiar: ["Docker", "Flask", "NGINX", "Puppet", "Next.js"],
+    Not_afraid_of: ["Learning new languages or technologies"],
+  };
   return (
     <>
       <Layout secondaryPage>
@@ -17,19 +23,8 @@ const About = () => {
               <Col md={12}>
                 <div className="about-intro">
                   I&apos;m a new software dev with a strong foundation in C,
-                  Python, and Javascript. I am comfortable on the Linux command
-                  line and have plenty of DevOps experience. I derive real joy
-                  from problem-solving and the discovery of odd things in the
-                  world of code.
-                  <br />
-                  <br />
-                  <li>Proficient: Bash, C, Python, JavaScript, SQL</li>
-                  <li>
-                    Current focus: React, CSS, HTML, Express, Node.js,
-                    PostgreSQL
-                  </li>
-                  <li>Familiar: Docker, Flask, NGINX, Puppet, Next.js</li>
-                  <li>Not afraid of: Learning new languages or technologies</li>
+                  Python, and Javascript.
+                  <pre>{JSON.stringify(tldr, null, 2)}</pre>
                 </div>
               </Col>
             </Row>

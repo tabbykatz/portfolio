@@ -11,6 +11,7 @@ out/
 
 *.swp
 .DS_Store
+.next*
 .next/build-manifest.json
 .next/react-loadable-manifest.json
 .next/cache/next-babel-loader/0a0a8d9059e4dd6018f9efc872d098d5.json

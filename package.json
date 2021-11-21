@@ -1,7 +1,7 @@
 {
   "name": "tabbykatz",
   "version": "1.0.0",
-  "description": "curious enthusiasm",
+  "description": "blog and professional portfolio",
   "main": "index.js",
   "scripts": {
     "dev": "next",
