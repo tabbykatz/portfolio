@@ -1,6 +1,6 @@
 import * as React from "react";
 import { Grid, Row, Col } from "react-flexbox-grid";
-import { Sun, Moon } from "react-feather";
+import { Sun, Moon, Instagram, Twitter, GitHub, Linkedin } from "react-feather";
 import Link from "next/link";
 import { useRouter } from "next/router";
 
@@ -196,6 +196,36 @@ function Layout({ children, isHomepage, secondaryPage, portfolio }) {
       <footer>
         <div>Happy {currentDayName()}!</div>
         <div>&copy; {new Date().getFullYear()} tabbykatz</div>
+        <div className="contacts-list">
+          <a
+            href="https://www.instagram.com/tabby_katz/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Instagram />
+          </a>
+          <a
+            href="https://twitter.com/tabby__katz"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Twitter />
+          </a>
+          <a
+            href="https://github.com/tabbykatz"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <GitHub />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/tabithaomelay/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Linkedin />
+          </a>
+        </div>
       </footer>
     </>
   );

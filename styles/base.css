@@ -554,6 +554,17 @@ footer {
   line-height: 2em;
 }
 
+.contacts-list {
+  text-align: center;
+  margin: 50px;
+}
+
+.contacts-list a {
+  text-decoration: none;
+  color: var(--text-color);
+  margin: 0 10px;
+}
+
 .author {
   margin-bottom: 40px;
 }
