@@ -9,26 +9,28 @@ author:
   name: "Tabitha O'Melay"
 ---
 
-_I have wanted a professional website for my portfolio & web
-presence for a long time. This project introduced me to React, Next.js, npm, and
+_A professional website for my portfolio & a blog. This project introduced me to React, Next.js, and
 Vercel._
 
+Have a look around- you're here! This website was made with React/[Next.js](https://nextjs.org/) and is continuously deployed from GitHub on [Vercel](https://vercel.com/). Though it has been updated since I first deployed it in 2020, the core functionality is still the same.
 
-Have a look around- you're here! This website was made with React on Next.js and is hosted from github by Vercel.
+![screenshot of the original landing page in dark mode](/homepage.png)
 
+# I'm especially proud of:
 
-Features I'm especially proud of:
 - Light & Dark Mode Toggle on desktop & mobile.
 - Markdown Blog engine
-- menu Keyboard Shortcuts. (***Try it-- press the number associated with the menu item on your keyboard***)
+- menu Keyboard Shortcuts. (**_Try it-- press the number associated with the menu item on your keyboard_**)
 
+This project was my capstone effort for Holberton School, and was originally deployed to my student domain, 'tabitha.tech'.
 
-This project was my capstone effort for Holberton School, and was originally on my student domain, 'tabitha.tech'. Here's the [landing page](https://www.tabbykatz.com/landing) I made for my instructors at school.
+# Problems I encountered:
 
+- `next.config.js` 😬 At the time of my first build, no one could tell me how to combine a raw-loader for `.md` files with an `.svg` handler. All of that has been solved with newer releases of [Next.js](https://nextjs.org/), of course, but it was a huge headache to get the icons working in light & dark mode without breaking my blog engine.
+- This was my first time setting up continuous deployment with [Vercel](https://vercel.com/). While initially confusing, it has been seamless ever since. The [Vercel](https://vercel.com/) developer support team is amazing. 🎉
+- State hooks! So much messy state in this site, something I'd like to clean up in the future, but as my first foray into [React Hooks](https://reactjs.org/docs/hooks-intro.html) I am proud of what I was able to do with them. 🪝
 
-I have gone so much deeper in both Javascript and React since I made this site and it's nearly due for an upgrade, but I am pleased with my first effort.
+# Source Code:
 
-
-
-
-
+- [GitHub Repo](https://github.com/tabbykatz/portfolio)
+- [Deployed Site](https://tabbykatz.com)
