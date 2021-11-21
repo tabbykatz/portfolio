@@ -9,7 +9,7 @@ author:
   name: "Tabitha O'Melay"
 ---
 
-_This program was built during the COVID-19 pandemic & "Shelter in Place" order in California, USA. My partner Zac and I wrote our shell using our own recreation of C standard library functions_
+_This program was built during the COVID-19 pandemic & "Shelter in Place" order in California, USA. My partner Zac and I wrote our shell using our own recreation of C standard library functions._
 
 # Why would you re-write the standard library?
 
@@ -74,7 +74,7 @@ build initially. I remember the days of using `bash` without thinking much of th
 is always more to understand, and building it from scratch is a great way to
 learn.
 
-![](/shellimg.jpeg)
+![ascii art from the project README that says "shellter in place"](/shellimg.jpeg)
 
 # I'm especially proud of:
 
@@ -98,7 +98,7 @@ void do_nothing(__attribute__((unused))int nothing)
 
 # Problems I encountered:
 
-- Scope. Wow do we ever take `bash` or `zsh` for granted. While we had prepared for this project, I don't think Zac or I instantly knew where to start. Luckily, peers and mentors helped us out.
+- Scope. Wow, do we ever take `bash` or `zsh` for granted. While we had prepared for this project, I don't think Zac or I instantly knew where to start. Luckily, peers and mentors helped us out.
 - Abusing [global variables](https://github.com/tabbykatz/simple_shell/blob/master/shell.h). I am not sure how else it could have been done.
 - Memory Leaks! In the end the shell was leak-free, but this kept us busy for a while.
 
