@@ -1,5 +1,5 @@
 ---
-title: "Ship$"
+title: "Ship$: A Simple Shell in C"
 date: "2020-04-17"
 og:
   description: "SHELLter in Place, or Ship$, is a simple command line interpreter written in C."
@@ -9,7 +9,11 @@ author:
   name: "Tabitha O'Melay"
 ---
 
-_This program was built during the COVID-19 pandemic & "Shelter in Place" order in California, USA. My parter Zac and I wrote our shell using a strtok function of our own design._
+_This program was built during the COVID-19 pandemic & "Shelter in Place" order in California, USA. My partner Zac and I wrote our shell using our own recreation of C standard library functions_
+
+# Why would you re-write the standard library?
+
+People ask me this a lot. This is how I learned C. From the beginning at [Holberton](https://www.holbertonschool.com/), we are given a single function: `_putchar()`. This function is used to print a single character to the screen. I learned the language by building everything from scratch, and you can see a lot of it in this shell. Here's my version of `strtok()`:
 
 ```C
 #include "shell.h"
@@ -63,6 +67,7 @@ char *_strtok(char *buffer, const char *delim)
 ```
 
 # SHELLter in Place
+
 Writing a shell is a software engineering rite of passage, and I expect I'll do
 it again in the future, adding new features that seemed challenging to
 build initially. I remember the days of using `bash` without thinking much of the innards. There
@@ -71,8 +76,32 @@ learn.
 
 ![](/shellimg.jpeg)
 
+# I'm especially proud of:
 
-<p> <a href="https://github.com/zacwoll/simple_shell" target="_blank">Check it out on Github</a></p>
+- `_strtok()` and `_getline()`. These small bits of code took a long time to write.
+- `do_nothing()`, because we were deep in the project/ deadline and had to make a decision. I'm still proud of this decision as I've grown as a developer. Sometimes working is better than perfect.
 
+```C
+/**
+ * do_nothing - a dummy function
+ * @nothing: a dummy integer
+ */
+void do_nothing(__attribute__((unused))int nothing)
+{
+	_putchar('\n');
+	puts_prompt();
+}
+```
 
+- my [first man page](https://github.com/tabbykatz/simple_shell/blob/master/man_1_simple_shell)
+- The friendship built with Zac. We remain friends for life.
 
+# Problems I encountered:
+
+- Scope. Wow do we ever take `bash` or `zsh` for granted. While we had prepared for this project, I don't think Zac or I instantly knew where to start. Luckily, peers and mentors helped us out.
+- Abusing [global variables](https://github.com/tabbykatz/simple_shell/blob/master/shell.h). I am not sure how else it could have been done.
+- Memory Leaks! In the end the shell was leak-free, but this kept us busy for a while.
+
+# Source Code:
+
+- [GitHub Repo](https://github.com/tabbykatz/simple_shell)
