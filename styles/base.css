@@ -235,7 +235,6 @@ h4,
 h5,
 h6 {
   font-family: var(--dank-reg), ibm-plex-mono, Monaco, "Lucida Console";
-  font-style: italic;
   font-weight: bold;
   color: var(--text-color);
   font-weight: 800;
@@ -470,14 +469,14 @@ h6 {
   color: var(--article-text-color);
 }
 
-.writing-container > p:first-child::first-letter {
+/* .writing-container > p:first-child::first-letter {
   float: left;
   margin: 2px 0 0 -2px;
   padding: 10px 10px 0 0;
   font-family: Montserrat;
   font-weight: 800;
   font-size: 5.5rem;
-}
+} */
 
 .writing-container *:not(pre) > code {
   font-family: var(--dank-reg), ibm-plex-mono, Monaco, "Lucida Console";
@@ -897,7 +896,6 @@ footer {
 
 .main-h1 {
   font-family: var(--dank-reg), ibm-plex-mono, Monaco, "Lucida Console";
-  font-style: italic;
   font-weight: bold;
   font-size: calc(2vw + 2vh);
 }
